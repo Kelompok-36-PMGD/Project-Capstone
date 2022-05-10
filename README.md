@@ -9,3 +9,6 @@ Untuk pertama kali pull, terdapat beberapa hal yang harus dilakukan.
 
 Untuk melakukan push progress, Anda harus menjadi tim dari project ini.
 Cara melakukan push pertama kali, harap mengikuti tutorial : https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
+
+Current used Package :
+- Cinemachine v2.6.11
