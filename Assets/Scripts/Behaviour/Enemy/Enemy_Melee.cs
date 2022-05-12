@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy_Melee : MonoBehaviour
 {
+    Patrol patrol;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
@@ -13,11 +14,12 @@ public class Enemy_Melee : MonoBehaviour
     [SerializeField] private float distanceCollider;
 
     private Animator anim;
-    private Health playerHealth;
+    private Life playerHealth;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        patrol = GetComponent<Patrol>();
         //anim = GetComponent<Animator>();
     }
 
@@ -46,7 +48,7 @@ public class Enemy_Melee : MonoBehaviour
 
         if (hit.collider != null)
         {
-            playerHealth = hit.transform.GetComponent<PlayerController>().health;
+            playerHealth = hit.transform.GetComponent<Life>();
         }
             
 
@@ -64,7 +66,8 @@ public class Enemy_Melee : MonoBehaviour
     {
         if (CheckPlayer())
         {
-            playerHealth.takeDamage(damage);
+            patrol.Attacking(attackCooldown);
+            playerHealth.OnHit(damage);
         }
     }
 
@@ -74,13 +77,8 @@ public class Enemy_Melee : MonoBehaviour
         if (collision.tag == "Projectile")
         {
             //anim.SetTrigger("Die");
-            
-
         }
 
     }
-
-  
-        
    
 }

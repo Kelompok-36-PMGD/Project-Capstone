@@ -4,6 +4,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Health health;
+    PlayerMovement playerMovement;
+    float horizontal;
 
+    Animator anim;
+
+    private void Awake()
+    {
+        playerMovement = GetComponent<PlayerMovement>();
+    }
+
+    private void Update()
+    {
+        horizontal = Input.GetAxisRaw("Horizontal");
+        playerMovement.horizontal = horizontal;
+    }
+
+    public void Dead()
+    {
+        Debug.Log("Ded");
+    }
 }

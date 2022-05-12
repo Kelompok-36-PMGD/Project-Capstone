@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     bool doubleJumpIsValid;
 
-    float horizontal;
+    [HideInInspector]public float horizontal;
     float direction; //Track the current direction the player headed
 
     private void Awake()
@@ -55,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = checkGrounded();
         //Get Input as float
-        horizontal = Input.GetAxisRaw("Horizontal");
 
         //Tracking last face direction before dash
         if(horizontal > 0 && dashTimer < 0f) //Player is facing right
