@@ -275,6 +275,9 @@ MonoBehaviour:
   jumpEndEarlyModifier: 0.15
   coyoteJumpTime: 0.2
   airHorizontalDrag: 0.2
+  dashCooldown: 1
+  dashDuration: 0.3
+  dashForce: 20
 --- !u!50 &129155509
 Rigidbody2D:
   serializedVersion: 4
