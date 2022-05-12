@@ -10,6 +10,7 @@ public class Health : ScriptableObject
     public void takeDamage(int amount)
     {
         health -= amount;
+        Debug.Log("Aw");
     }
 
     public void gainHealth(int amount)
