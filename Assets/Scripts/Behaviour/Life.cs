@@ -4,10 +4,9 @@ using UnityEngine.Events;
 public class Life : MonoBehaviour
 {
     [SerializeField] bool useScriptable;
-    public int life;
     public Health lifeScriptable;
+    public int life;
     public int maxLife;
-    public Health maxLifeScriptable;
     
 
     public UnityEvent OnLifeReachZero;
@@ -23,6 +22,7 @@ public class Life : MonoBehaviour
         
     }
 
+    //For enemydamage, from the Enemy OBJECT get the EnemyController then call the TakeDamage(AttackType type) function instead.
     public void OnHit(int amount)
     {
         if (useScriptable)
@@ -49,7 +49,7 @@ public class Life : MonoBehaviour
         //GameManager.GetInstance().lifeMusic.Play();
         if (useScriptable)
         {
-            lifeScriptable.value = lifeScriptable.value + amount > maxLifeScriptable.value ? maxLifeScriptable.value : lifeScriptable.value + amount;
+            lifeScriptable.value = lifeScriptable.value + amount > lifeScriptable.maxValue ? lifeScriptable.maxValue : lifeScriptable.value + amount;
 
         }
         else
@@ -59,5 +59,15 @@ public class Life : MonoBehaviour
         }
     }
 
+    //player only scripts =================================
+    public void IncreaseMax(int amount)
+    {
+        lifeScriptable.maxValue += amount;
+    }
+
+    public void DecreaseMax(int amount)
+    {
+        lifeScriptable.maxValue -= amount;
+    }
     
 }

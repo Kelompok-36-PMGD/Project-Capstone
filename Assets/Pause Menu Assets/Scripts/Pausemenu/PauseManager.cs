@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.IO;
+using UnityEngine.SceneManagement;
 //using UnityStandardAssets.ImageEffects;
 /// <summary>
 ///  Copyright (c) 2016 Eric Zhu 
@@ -360,7 +361,7 @@ namespace GreatArcStudios
         /// </summary>
         public void Restart()
         {
-            Application.LoadLevel(Application.loadedLevel);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             uiEventSystem.firstSelectedGameObject = defualtSelectedMain;
         }
         /// <summary>
@@ -422,7 +423,7 @@ namespace GreatArcStudios
         /// </summary>
         public void returnToMenu()
         {
-            Application.LoadLevel(mainMenu);
+            SceneManager.LoadScene(mainMenu);
             uiEventSystem.SetSelectedGameObject(defualtSelectedMain);
         }
 
@@ -435,20 +436,20 @@ namespace GreatArcStudios
             readUseSimpleTerrain = useSimpleTerrain;
             useSimpleTerrain = readUseSimpleTerrain;
             //colorCrossfade();
-            if (vidPanel.active == true)
+            if (vidPanel.activeInHierarchy == true)
             {
                 pauseMenu.text = "Video Menu";
             }
-            else if (audioPanel.active == true)
+            else if (audioPanel.activeInHierarchy == true)
             {
                 pauseMenu.text = "Audio Menu";
             }
-            else if (mainPanel.active == true)
+            else if (mainPanel.activeInHierarchy == true)
             {
                 pauseMenu.text = "Pause Menu";
             }
 
-            if (Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == false)
+            if (Input.GetKeyDown(KeyCode.Escape) && mainPanel.activeInHierarchy == false)
             {
 
                 uiEventSystem.SetSelectedGameObject(defualtSelectedMain);
@@ -467,7 +468,7 @@ namespace GreatArcStudios
                      blurEffect.enabled = true;
                  }  */
             }
-            else if(Input.GetKeyDown(KeyCode.Escape) && mainPanel.active == true) {
+            else if(Input.GetKeyDown(KeyCode.Escape) && mainPanel.activeInHierarchy == true) {
                 Time.timeScale = timeScale;
                 mainPanel.SetActive(false);
                 vidPanel.SetActive(false);

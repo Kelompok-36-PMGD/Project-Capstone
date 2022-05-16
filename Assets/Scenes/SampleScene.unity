@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 129155509}
   - component: {fileID: 129155508}
   - component: {fileID: 129155513}
+  - component: {fileID: 129155515}
   - component: {fileID: 129155514}
   m_Layer: 7
   m_Name: Player
@@ -280,6 +281,7 @@ MonoBehaviour:
   dashCooldown: 1
   dashDuration: 0.3
   dashForce: 20
+  horizontal: 0
 --- !u!50 &129155509
 Rigidbody2D:
   serializedVersion: 4
@@ -395,10 +397,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useScriptable: 1
-  life: 0
   lifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
+  life: 0
   maxLife: 0
-  maxLifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
   OnLifeReachZero:
     m_PersistentCalls:
       m_Calls:
@@ -426,6 +427,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d6f9087bcfa574bb6791f8c967ec04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &129155515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129155507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a99ddc2ccb93ab40b08e4345fc90b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mana: {fileID: 11400000, guid: 982f1b12c1f2ca04d9fbd8ab1e04c712, type: 2}
+  RegenOverTime: 1
+  regenValue: 1
+  regenRate: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +685,9 @@ GameObject:
   - component: {fileID: 692749624}
   - component: {fileID: 692749625}
   - component: {fileID: 692749629}
+  - component: {fileID: 692749632}
+  - component: {fileID: 692749631}
+  - component: {fileID: 692749630}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -826,6 +846,72 @@ MonoBehaviour:
     m_Bits: 512
   speed: 5
   moveDelay: 0
+--- !u!114 &692749630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692749623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e0ad7cfb6d20541994131598843c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useScriptable: 0
+  lifeScriptable: {fileID: 0}
+  life: 10
+  maxLife: 10
+  OnLifeReachZero:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 692749631}
+        m_TargetAssemblyTypeName: EnemyDropItem, Assembly-CSharp
+        m_MethodName: dropOnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &692749631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692749623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac247f10e912f564392ab1497a408eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops: []
+  rolls: 1
+--- !u!114 &692749632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692749623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b164dd4f5be0794f91e2f351b3ed59c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyWeaknesses:
+  - attackType: 0
+    weakness: 1
+  - attackType: 1
+    weakness: 0
+  - attackType: 2
+    weakness: 0
+  - attackType: 3
+    weakness: 0
 --- !u!1 &751219595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,4 +1316,4 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
