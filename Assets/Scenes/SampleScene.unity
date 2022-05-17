@@ -479,11 +479,11 @@ MonoBehaviour:
   mana: {fileID: 11400000, guid: 982f1b12c1f2ca04d9fbd8ab1e04c712, type: 2}
   slider: {fileID: 204053679}
   movingSlider: {fileID: 405525238}
-  _sliderSpeed: 5
+  _sliderSpeed: 35
   _particleSys: {fileID: 233815788}
   _RegenOverTime: 1
-  _regenValue: 1
-  _regenRate: 2
+  _regenValue: 2
+  _regenRate: 3
 --- !u!114 &129155516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204053677}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
@@ -537,10 +537,10 @@ RectTransform:
   - {fileID: 879540045}
   m_Father: {fileID: 273286973}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 490}
+  m_AnchoredPosition: {x: -906, y: 283}
   m_SizeDelta: {x: 120, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204053679
@@ -1530,7 +1530,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 0
       minScalar: 10
       maxCurve:
         serializedVersion: 2
