@@ -19,6 +19,7 @@ public class Skills : MonoBehaviour
     private void Awake()
     {
         mana = GetComponent<Mana>();
+        _currentKhodam = _khodamList[0];
     }
 
     private void Update()
@@ -28,5 +29,8 @@ public class Skills : MonoBehaviour
             //Usekhodam & damage enemy if on range
             mana.Decrease(_currentKhodam.manaCost);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) _currentKhodam = _khodamList[0];
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) _currentKhodam = _khodamList[1];
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) _currentKhodam = _khodamList[2];
     }
 }

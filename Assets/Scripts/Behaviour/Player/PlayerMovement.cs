@@ -30,6 +30,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashDuration = 1f;
     [SerializeField] float dashForce = 10f;
 
+    [Header("Run")]
+    public float runSpeed = 10f;
+    public float runKeyPressDelay = 1f;
+    public float runChangeDirectionCompensation = 0.5f;
+
     float coyoteTime;
     float jumpEndEarlyTime;
     float jumpBufferTime;
@@ -42,8 +47,10 @@ public class PlayerMovement : MonoBehaviour
     bool doubleJump;
     bool isGrounded;
     bool doubleJumpIsValid;
+    float runChangeDirectionTimer;
 
     [HideInInspector]public float horizontal;
+    [HideInInspector]public bool running;
     float direction; //Track the current direction the player headed
 
     private void Awake()
@@ -55,7 +62,6 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = checkGrounded();
         //Get Input as float
-
         //Tracking last face direction before dash
         if(horizontal > 0 && dashTimer < 0f) //Player is facing right
         {
@@ -66,6 +72,18 @@ public class PlayerMovement : MonoBehaviour
             direction = -1f;
         }
 
+        //run Stop
+        if (running && horizontal == 0f && runChangeDirectionTimer < 0f)
+        {
+            running = false;
+            runChangeDirectionTimer = runChangeDirectionCompensation;
+        }
+        else if (!running & horizontal != 0f && runChangeDirectionTimer > 0f)
+        {
+            running = true;
+            runChangeDirectionTimer = 0f; //reset
+        }
+        Debug.Log(running);
         //Time dependant variables
         if (isGrounded)
         {
@@ -77,8 +95,9 @@ public class PlayerMovement : MonoBehaviour
         jumpEndEarlyTime -= Time.deltaTime;
         dashTimer -= Time.deltaTime;
         dashCooldownTimer -= Time.deltaTime;
+        runChangeDirectionTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpBufferTime = jumpBuffer;
             jumpButtonReleased = false;
@@ -98,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Z))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             jumpButtonReleased = true;
         }
@@ -120,6 +139,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Player movement physics
         float targetSpeed = horizontal * speed;
+        if (running) targetSpeed = horizontal * runSpeed;
         float speedDiff = targetSpeed - rb.velocity.x;
         float accelRate;
         //Apply air drag while midAir, false otherwise
