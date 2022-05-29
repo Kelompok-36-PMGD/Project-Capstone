@@ -6,9 +6,10 @@ using UnityEngine.Events;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Item : MonoBehaviour
 {    
-    public enum InteractionType { NONE, PickUp, Examine,GrabDrop }
+    public enum InteractionType { NONE, PickUp, Examine,GrabDrop, Interact }
     public enum ItemType { Staic, Consumables}
     [Header("Attributes")]
+    public string itemName;
     public InteractionType interactType;
     public ItemType type;
     [Header("Exmaine")]
@@ -40,6 +41,9 @@ public class Item : MonoBehaviour
             case InteractionType.GrabDrop:
                 //Grab interaction
                 FindObjectOfType<InteractionSystem>().GrabDrop();
+                break;
+            case InteractionType.Interact:
+                //Straight to customEvent.Invoke()
                 break;
             default:
                 Debug.Log("NULL ITEM");

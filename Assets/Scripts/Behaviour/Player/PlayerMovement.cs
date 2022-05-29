@@ -83,7 +83,6 @@ public class PlayerMovement : MonoBehaviour
             running = true;
             runChangeDirectionTimer = 0f; //reset
         }
-        Debug.Log(running);
         //Time dependant variables
         if (isGrounded)
         {

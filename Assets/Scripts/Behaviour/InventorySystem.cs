@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
+    public static InventorySystem instance;
+
     [Header("General Fields")]
     //List of items picked up
+    public int itemMax = 6;
     public List<GameObject> items= new List<GameObject>();
     //flag indicates if the inventory is open or not
     public bool isOpen;
@@ -20,6 +23,14 @@ public class InventorySystem : MonoBehaviour
     public Text description_Title;
     public Text description_Text;
 
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else Destroy(gameObject);
+    }
 
     private void Update()
     {
@@ -40,8 +51,14 @@ public class InventorySystem : MonoBehaviour
     //Add the item to the items list
     public void PickUp(GameObject item)
     {
-        items.Add(item);
-        Update_UI();
+        if(items.Count >= itemMax){
+            Debug.Log("Inventory Full");
+        }
+        else
+        {
+            items.Add(item);
+            Update_UI();
+        }
     }
 
     //Refresh the UI elements in the inventory window    
@@ -70,7 +87,7 @@ public class InventorySystem : MonoBehaviour
         //Set the Image
         description_Image.sprite = items_images[id].sprite;
         //Set the Title
-        description_Title.text = items[id].name;
+        description_Title.text = items[id].GetComponent<Item>().itemName;
         //Show the description
         description_Text.text = items[id].GetComponent<Item>().descriptionText;
         //Show the elements

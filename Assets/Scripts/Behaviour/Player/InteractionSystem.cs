@@ -25,6 +25,8 @@ public class InteractionSystem : MonoBehaviour
     public bool isExamining;
     public bool isGrabbing;
 
+    GameObject lastInteracted;
+
     void Update()
     {
         if(DetectObject())
@@ -40,6 +42,12 @@ public class InteractionSystem : MonoBehaviour
 
                 detectedObject.GetComponent<Item>().Interact();
             }
+        }
+
+        //Close the examine window when the player walk away
+        if (isExamining && Vector2.Distance(lastInteracted.transform.position, transform.position) > 3f)
+        {
+            ExamineItem(lastInteracted.GetComponent<Item>());
         }
     }
 
@@ -90,6 +98,7 @@ public class InteractionSystem : MonoBehaviour
             examineWindow.SetActive(true);
             //enable the boolean
             isExamining = true;
+            lastInteracted = item.gameObject;
         }        
     }
 
