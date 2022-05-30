@@ -1,0 +1,978 @@
+fileFormatVersion: 2
+guid: 6c456edfc8725cd40a32c0b689ea19a5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4307971049911207937
+    second: Fix Buto Ijo Asset_15
+  - first:
+      213: 8581100212243048905
+    second: Fix Buto Ijo Asset_16
+  - first:
+      213: -8908223696908358008
+    second: Fix Buto Ijo Asset_17
+  - first:
+      213: 7389217816593444584
+    second: Fix Buto Ijo Asset_18
+  - first:
+      213: -593108687656556921
+    second: Fix Buto Ijo Asset_27
+  - first:
+      213: -1919192030732857951
+    second: Fix Buto Ijo Asset_28
+  - first:
+      213: 6698439358013134282
+    second: Fix Buto Ijo Asset_29
+  - first:
+      213: -902625631747277101
+    second: Fix Buto Ijo Asset_30
+  - first:
+      213: 7335596162303006765
+    second: Fix Buto Ijo Asset_31
+  - first:
+      213: -4358018837888539182
+    second: Fix Buto Ijo Asset_32
+  - first:
+      213: -2525611350245890563
+    second: Fix Buto Ijo Asset_33
+  - first:
+      213: -145043972176354080
+    second: Fix Buto Ijo Asset_34
+  - first:
+      213: -7544749000786121616
+    second: Fix Buto Ijo Asset_35
+  - first:
+      213: 5397532670937963091
+    second: Fix Buto Ijo Asset_36
+  - first:
+      213: -2188529382919796779
+    second: Fix Buto Ijo Asset_37
+  - first:
+      213: -6113585726085522248
+    second: Fix Buto Ijo Asset_38
+  - first:
+      213: 7863286484644074685
+    second: Fix Buto Ijo Asset_39
+  - first:
+      213: -5133881885850679047
+    second: Fix Buto Ijo Asset_40
+  - first:
+      213: -3210279268331887600
+    second: Fix Buto Ijo Asset_41
+  - first:
+      213: 8060547414391585613
+    second: Fix Buto Ijo Asset_42
+  - first:
+      213: 576991912803868816
+    second: Fix Buto Ijo Asset_43
+  - first:
+      213: -5881677230938926057
+    second: Fix Buto Ijo Asset_44
+  - first:
+      213: 4836429398460584119
+    second: Fix Buto Ijo Asset_45
+  - first:
+      213: 7846677230015158283
+    second: Fix Buto Ijo Asset_46
+  - first:
+      213: -6431038007620872590
+    second: Fix Buto Ijo Asset_47
+  - first:
+      213: 4299840864550463119
+    second: Fix Buto Ijo Asset_68
+  - first:
+      213: 7313736044577752475
+    second: Fix Buto Ijo Asset_69
+  - first:
+      213: 2131614774592175728
+    second: Fix Buto Ijo Asset_70
+  - first:
+      213: 1935967579180238155
+    second: Fix Buto Ijo Asset_71
+  - first:
+      213: 965518736499408116
+    second: Fix Buto Ijo Asset_72
+  - first:
+      213: -2424903529418890835
+    second: Fix Buto Ijo Asset_73
+  - first:
+      213: 5241596368397022568
+    second: Fix Buto Ijo Asset_74
+  - first:
+      213: -3294802049111885959
+    second: Fix Buto Ijo Asset_75
+  - first:
+      213: 5547190739741485063
+    second: Fix Buto Ijo Asset_76
+  - first:
+      213: 7648441693660259889
+    second: Fix Buto Ijo Asset_77
+  - first:
+      213: -4647361568484649958
+    second: Fix Buto Ijo Asset_78
+  - first:
+      213: 1720077928825316110
+    second: Fix Buto Ijo Asset_79
+  - first:
+      213: 8543095848166896759
+    second: Fix Buto Ijo Asset_80
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 422
+        width: 117
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108cf9468dcf8cb30800000000000000
+      internalID: 4307971049911207937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_16
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 422
+        width: 183
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9a6ccad21361770800000000000000
+      internalID: 8581100212243048905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_17
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 422
+        width: 178
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e6f06deb1af5480800000000000000
+      internalID: -8908223696908358008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_18
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 422
+        width: 149
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee2a065476cb8660800000000000000
+      internalID: 7389217816593444584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 233
+        width: 98
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786680f7acad4c7f0800000000000000
+      internalID: -593108687656556921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_28
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 233
+        width: 103
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad48603409ad55e0800000000000000
+      internalID: -1919192030732857951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_29
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 232
+        width: 128
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac55ed33b13a5fc50800000000000000
+      internalID: 6698439358013134282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_30
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 232
+        width: 103
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de7a8e25ca3973f0800000000000000
+      internalID: -902625631747277101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_33
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 48
+        width: 114
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df526e3bbd933fcd0800000000000000
+      internalID: -2525611350245890563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_34
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 48
+        width: 114
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4ed999643bcfdf0800000000000000
+      internalID: -145043972176354080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_35
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 46
+        width: 68
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ce8a0f1caab4790800000000000000
+      internalID: -7544749000786121616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_36
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 55
+        width: 53
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a92daed53e7ea40800000000000000
+      internalID: 5397532670937963091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_37
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 155
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d78f8e1f18c0a1e0800000000000000
+      internalID: -2188529382919796779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_38
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 158
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc16cc5c2e282ba0800000000000000
+      internalID: -6113585726085522248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_39
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 144
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db417547561002d60800000000000000
+      internalID: 7863286484644074685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_40
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 158
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8ce0310a9c0c8b0800000000000000
+      internalID: -5133881885850679047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_41
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 126
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014e645a30cc273d0800000000000000
+      internalID: -3210279268331887600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_42
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 149
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4bf002ba21dcdf60800000000000000
+      internalID: 8060547414391585613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_43
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 135
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090a2f07613e10800800000000000000
+      internalID: 576991912803868816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_44
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 75
+        width: 27
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714d16e88b5106ea0800000000000000
+      internalID: -5881677230938926057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_45
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 139
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0df74d9e27e1340800000000000000
+      internalID: 4836429398460584119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_46
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 135
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0813320e5ff4ec60800000000000000
+      internalID: 7846677230015158283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_47
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 137
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276d8b2510d50c6a0800000000000000
+      internalID: -6431038007620872590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_68
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 123
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f862d3a1c7a1cab30800000000000000
+      internalID: 4299840864550463119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_69
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 121
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b950706ce2c9f7560800000000000000
+      internalID: 7313736044577752475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_70
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 121
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e7a8df754059d10800000000000000
+      internalID: 2131614774592175728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_71
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 107
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4506bd8140fdda10800000000000000
+      internalID: 1935967579180238155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_72
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 114
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcf701ec26366d00800000000000000
+      internalID: 965518736499408116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_73
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 98
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da165627613095ed0800000000000000
+      internalID: -2424903529418890835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_74
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 62
+        width: 21
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865384a3024edb840800000000000000
+      internalID: 5241596368397022568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_75
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 101
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977f4713ef28642d0800000000000000
+      internalID: -3294802049111885959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_76
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 73
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708a0a766949bfc40800000000000000
+      internalID: 5547190739741485063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_77
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 82
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13628eb7239b42a60800000000000000
+      internalID: 7648441693660259889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_78
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 55
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a149ba7b641418fb0800000000000000
+      internalID: -4647361568484649958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_79
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 82
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e036f9d43c1fed710800000000000000
+      internalID: 1720077928825316110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Buto Ijo Asset_80
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 41
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7743a10296c2f8670800000000000000
+      internalID: 8543095848166896759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e169a5597d4b96b4d9f0b7eddd600bc5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

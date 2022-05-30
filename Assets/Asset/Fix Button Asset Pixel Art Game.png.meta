@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 7ac5d73a263790f4f9c03fdcff09e0df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4268165629069339011
+    second: Fix Button Asset Pixel Art Game_0
+  - first:
+      213: -6221115377619616682
+    second: Fix Button Asset Pixel Art Game_1
+  - first:
+      213: 6503327449083417071
+    second: Fix Button Asset Pixel Art Game_2
+  - first:
+      213: 2661088864790342481
+    second: Fix Button Asset Pixel Art Game_3
+  - first:
+      213: 7904248960790880031
+    second: Fix Button Asset Pixel Art Game_4
+  - first:
+      213: -6697351536318924612
+    second: Fix Button Asset Pixel Art Game_5
+  - first:
+      213: 5348596122208903518
+    second: Fix Button Asset Pixel Art Game_6
+  - first:
+      213: -2594399876102428476
+    second: Fix Button Asset Pixel Art Game_7
+  - first:
+      213: -724598527953109414
+    second: Fix Button Asset Pixel Art Game_8
+  - first:
+      213: 921297168099940910
+    second: Fix Button Asset Pixel Art Game_9
+  - first:
+      213: 4047067378645978487
+    second: Fix Button Asset Pixel Art Game_10
+  - first:
+      213: 8637801551594479700
+    second: Fix Button Asset Pixel Art Game_11
+  - first:
+      213: -1511274075196176433
+    second: Fix Button Asset Pixel Art Game_12
+  - first:
+      213: 1066890132578905612
+    second: Fix Button Asset Pixel Art Game_13
+  - first:
+      213: -1033129517689750396
+    second: Fix Button Asset Pixel Art Game_14
+  - first:
+      213: -4042811507318029178
+    second: Fix Button Asset Pixel Art Game_15
+  - first:
+      213: 2967321974433180506
+    second: Fix Button Asset Pixel Art Game_16
+  - first:
+      213: -2690162788507049436
+    second: Fix Button Asset Pixel Art Game_17
+  - first:
+      213: 185865049959312228
+    second: Fix Button Asset Pixel Art Game_18
+  - first:
+      213: 638211000024667308
+    second: Fix Button Asset Pixel Art Game_19
+  - first:
+      213: -7044784076465935436
+    second: Fix Button Asset Pixel Art Game_20
+  - first:
+      213: -1978312705726484285
+    second: Fix Button Asset Pixel Art Game_21
+  - first:
+      213: 4091753449659378191
+    second: Fix Button Asset Pixel Art Game_22
+  - first:
+      213: -7794863907070949834
+    second: Fix Button Asset Pixel Art Game_23
+  - first:
+      213: 7119470350500950509
+    second: Fix Button Asset Pixel Art Game_24
+  - first:
+      213: 4624021683773846814
+    second: Fix Button Asset Pixel Art Game_25
+  - first:
+      213: -8579566948540665233
+    second: Fix Button Asset Pixel Art Game_26
+  - first:
+      213: -8205308186878662236
+    second: Fix Button Asset Pixel Art Game_27
+  - first:
+      213: 7673402329586894799
+    second: Fix Button Asset Pixel Art Game_28
+  - first:
+      213: -5238587893854899233
+    second: Fix Button Asset Pixel Art Game_29
+  - first:
+      213: 6577458523075855497
+    second: Fix Button Asset Pixel Art Game_30
+  - first:
+      213: -935297519376974827
+    second: Fix Button Asset Pixel Art Game_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 633
+        width: 211
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d765acc59fd64c4c0800000000000000
+      internalID: -4268165629069339011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 634
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c334266882aa9a0800000000000000
+      internalID: -6221115377619616682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 633
+        width: 319
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe11aacdbd5704a50800000000000000
+      internalID: 6503327449083417071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_3
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 633
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b639539361ee420800000000000000
+      internalID: 2661088864790342481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_4
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 633
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fd0342d8881bd60800000000000000
+      internalID: 7904248960790880031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_5
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 633
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb83bc5034a3e03a0800000000000000
+      internalID: -6697351536318924612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 519
+        width: 211
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e512b47c5d70a3a40800000000000000
+      internalID: 5348596122208903518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_7
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 519
+        width: 211
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8e893fe07defbd0800000000000000
+      internalID: -2594399876102428476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 519
+        width: 319
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e75985a75b1f5f0800000000000000
+      internalID: -724598527953109414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_9
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 519
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a9b25a4ea19cc00800000000000000
+      internalID: 921297168099940910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_10
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 519
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dc34ea6521a2830800000000000000
+      internalID: 4047067378645978487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_11
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 519
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4506b130fb2afd770800000000000000
+      internalID: 8637801551594479700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 406
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7cca55c30e60be0800000000000000
+      internalID: -1511274075196176433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_13
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 406
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e2cb64cea5ece00800000000000000
+      internalID: 1066890132578905612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_14
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 405
+        width: 319
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48cb12b6d2699a1f0800000000000000
+      internalID: -1033129517689750396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_15
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 406
+        width: 96
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68482749a5c05e7c0800000000000000
+      internalID: -4042811507318029178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_16
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 406
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bec4c3d9b0e2920800000000000000
+      internalID: 2967321974433180506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_17
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 406
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422201b623f9aaad0800000000000000
+      internalID: -2690162788507049436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 292
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b2cf63743549200800000000000000
+      internalID: 185865049959312228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_19
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 292
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4973ce5816bd800800000000000000
+      internalID: 638211000024667308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_20
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 292
+        width: 319
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb6be21536eb3e90800000000000000
+      internalID: -7044784076465935436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_21
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 292
+        width: 96
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0f780631f9b84e0800000000000000
+      internalID: -1978312705726484285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_22
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 292
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a2d6b5514d8c830800000000000000
+      internalID: 4091753449659378191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 292
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636c582539413d390800000000000000
+      internalID: -7794863907070949834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 178
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1f88e20907dc260800000000000000
+      internalID: 7119470350500950509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_25
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 178
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e153b07e833db2040800000000000000
+      internalID: 4624021683773846814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_26
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 178
+        width: 319
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f623d8911514fe880800000000000000
+      internalID: -8579566948540665233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_27
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 195
+        width: 96
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a92e787da3e02e80800000000000000
+      internalID: -8205308186878662236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_28
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 195
+        width: 97
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc78ea963c66d7a60800000000000000
+      internalID: 7673402329586894799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3fd16d01ccc47b0800000000000000
+      internalID: -5238587893854899233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_30
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 64
+        width: 211
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9844dc88da3d74b50800000000000000
+      internalID: 6577458523075855497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_31
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 64
+        width: 319
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c3b3e8cd72503f0800000000000000
+      internalID: -935297519376974827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,7 +20,7 @@ public class Enemy_Melee : MonoBehaviour
     void Awake()
     {
         patrol = GetComponent<Patrol>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -49,6 +49,7 @@ public class Enemy_Melee : MonoBehaviour
         if (hit.collider != null)
         {
             playerHealth = hit.transform.GetComponent<Life>();
+            anim.SetTrigger("MeleeAttack");
         }
             
 
