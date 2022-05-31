@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator anim;
+    SpriteRenderer spriteRenderer;
     public int groundLayer;
     [Header("Movement")]
     [SerializeField] float speed = 10f;
@@ -41,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     float dashCooldownTimer;
     float dashTimer;
 
+    bool falling;
     bool jumping;
     bool jumpButtonReleased;
     bool endedJumpEarly;
@@ -56,14 +59,25 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
         isGrounded = checkGrounded();
+
+        //Animation
+        //Check landing
+        if (isGrounded && falling) anim.SetTrigger("landing");
+
+        //Flip
+        if (rb.velocity.x > 0) spriteRenderer.flipX = false;
+        else if (rb.velocity.x < 0) spriteRenderer.flipX = true;
+
         //Get Input as float
         //Tracking last face direction before dash
-        if(horizontal > 0 && dashTimer < 0f) //Player is facing right
+        if (horizontal > 0 && dashTimer < 0f) //Player is facing right
         {
             direction = 1f;
         }
@@ -138,7 +152,12 @@ public class PlayerMovement : MonoBehaviour
     {
         //Player movement physics
         float targetSpeed = horizontal * speed;
-        if (running) targetSpeed = horizontal * runSpeed;
+        if (running)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", true);
+            targetSpeed = horizontal * runSpeed;
+        }
         float speedDiff = targetSpeed - rb.velocity.x;
         float accelRate;
         //Apply air drag while midAir, false otherwise
@@ -147,8 +166,14 @@ public class PlayerMovement : MonoBehaviour
         float movement = Mathf.Pow(Mathf.Abs(speedDiff) * accelRate, velPower) * Mathf.Sign(speedDiff);
         rb.AddForce(movement * Vector2.right);
 
+        //Animation Falling
+        if (rb.velocity.y < 0) falling = true;
+        else falling = false;
+        anim.SetBool("fall", falling);
+
+
         //Jump if onKeyDown or has buffered jump(pressing jump while midAir)
-        if(jumping || hasBufferedJump || doubleJump)
+        if (jumping || hasBufferedJump || doubleJump)
         {
             jumpBufferTime = 0f;
             jumping = false;
@@ -175,6 +200,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        anim.SetTrigger("jump");
         jumpEndEarlyTime = jumpEndEarlyMinimal; //Reset the timer so that the player will jump at least until this value < 0
         rb.velocity = new Vector2(rb.velocity.x, 0f); //Reset the jump so that the added Force stay constant
         rb.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);

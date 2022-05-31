@@ -9,7 +9,7 @@ public class PoolObject : MonoBehaviour
     public bool deactiveOnStart = true;
     void Awake()
     {
-        deactivate();
+        if(deactiveOnStart)deactivate();
     }
 
     public void activate(Vector3 position, Quaternion rotation)

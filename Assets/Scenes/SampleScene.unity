@@ -813,14 +813,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c096cf89e45003244b89bf2cbd57f4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
+  enemyPatrol: 0
   range: 1.53
-  damage: 10
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
   boxCollider: {fileID: 692749624}
   distanceCollider: 0.53
+  attackHeight: 5
+  attackYOffset: 2
+  attackCooldown: 2
+  animToDamageDelay: 0
+  damage: 10
 --- !u!50 &692749626
 Rigidbody2D:
   serializedVersion: 4
@@ -914,12 +918,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692749623}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4544c96b4cfa8c48bedd0c073c09068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mustPatrol: 1
   turnAround: []
   turnAroundMask:
     serializedVersion: 2
@@ -1487,6 +1490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinScriptable: {fileID: 11400000, guid: ba5aecbfb0c1aca41810039a9a274410, type: 2}
+  coinText: {fileID: 2068273215}
 --- !u!4 &1589996563
 Transform:
   m_ObjectHideFlags: 0
@@ -1684,6 +1688,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2068273215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3591779860399551182, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
+  m_PrefabInstance: {fileID: 2799261842224015197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2097348844 stripped
@@ -2131,7 +2146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5816568843421834512, guid: 38a8adedae9ba8a4b81c9ad713e8af93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.32
+      value: -2.31
       objectReference: {fileID: 0}
     - target: {fileID: 5816568843421834512, guid: 38a8adedae9ba8a4b81c9ad713e8af93, type: 3}
       propertyPath: m_LocalPosition.y

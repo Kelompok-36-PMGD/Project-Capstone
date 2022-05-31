@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
-
-    public bool mustPatrol;
     private bool mustTurn;
 
     Rigidbody2D rb;
+    private Animator anim;
     public Transform[] turnAround;
-    public LayerMask turnAroundMask;
+    public LayerMask turnAroundMask = 9;
     Collider2D bodyCollider;
 
     [Header("Movement")]
@@ -28,16 +27,16 @@ public class Patrol : MonoBehaviour
 
     void Awake()
     {
-        mustPatrol = true;
         //anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         bodyCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mustPatrol && checkingTurnAround)
+        if (checkingTurnAround)
         {
             if (Physics2D.Raycast(rb.position, Vector2.right, 0.5f, turnAroundMask) || bodyCollider.IsTouchingLayers(turnAroundMask))
             {
@@ -72,7 +71,7 @@ public class Patrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (mustPatrol && !isAttacking) Move();
+        if (!isAttacking) Move();
     }
 
     void Move()
@@ -95,11 +94,18 @@ public class Patrol : MonoBehaviour
         speed *= -1;
     }
 
-    public void Attacking(float attackCooldown)
+    public void Attacking(float attackCooldown, float chargeTime)
     {
+        anim.SetTrigger("charge");
         isAttacking = true;
         currentSpeed = 0;
+        Invoke("DelayChargeAttack", chargeTime);
         Invoke("DelayAttack", attackCooldown);
+    }
+
+    void DelayChargeAttack()
+    {
+        anim.SetTrigger("attack");
     }
 
     void DelayAttack()

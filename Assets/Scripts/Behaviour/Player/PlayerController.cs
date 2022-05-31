@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     PlayerMovement playerMovement;
     float horizontal;
     float lastDirectionPressed;
@@ -14,6 +15,10 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
+
+        anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
         runDelay = playerMovement.runKeyPressDelay;
     }
@@ -28,8 +33,10 @@ public class PlayerController : MonoBehaviour
         //WalkRight
         if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
+            anim.SetBool("walk", true);
             if(lastDirectionPressed == 1f && lastWalkPressed > 0f)
             {
+                //Run animation on PlayerMovement scripts for convenient
                 playerMovement.running = true;
             }
             lastWalkPressed = runDelay;
@@ -37,6 +44,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
+            anim.SetBool("walk", true);
             if (lastDirectionPressed == -1f && lastWalkPressed > 0f)
             {
                 playerMovement.running = true;
@@ -44,10 +52,21 @@ public class PlayerController : MonoBehaviour
             lastWalkPressed = runDelay;
             lastDirectionPressed = -1f;
         }
+        else if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D) && lastWalkPressed < 0f)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", false);
+        }
     }
 
     public void Dead()
     {
         Debug.Log("Ded");
+    }
+
+    public void HitAnimation()
+    {
+        Debug.Log("Kena hit");
+        //anim.SetTrigger("hit");
     }
 }

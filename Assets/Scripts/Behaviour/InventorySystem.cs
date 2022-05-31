@@ -51,14 +51,8 @@ public class InventorySystem : MonoBehaviour
     //Add the item to the items list
     public void PickUp(GameObject item)
     {
-        if(items.Count >= itemMax){
-            Debug.Log("Inventory Full");
-        }
-        else
-        {
-            items.Add(item);
-            Update_UI();
-        }
+        items.Add(item);
+        Update_UI();
     }
 
     //Refresh the UI elements in the inventory window    

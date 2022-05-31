@@ -35,6 +35,7 @@ public class Coin : MonoBehaviour
             player = collision.transform;
             followingPlayer = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else if (collision.gameObject.tag == "Player" && followingPlayer)
         {
