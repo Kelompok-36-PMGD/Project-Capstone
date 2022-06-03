@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     Rigidbody2D rb;
     Animator anim;
     SpriteRenderer spriteRenderer;
@@ -55,12 +56,16 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]public float horizontal;
     [HideInInspector]public bool running;
     float direction; //Track the current direction the player headed
+    [HideInInspector] public int facingDirection;
 
     private void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        facingDirection = 1;
     }
 
     private void Update()
@@ -69,11 +74,19 @@ public class PlayerMovement : MonoBehaviour
 
         //Animation
         //Check landing
-        if (isGrounded && falling) anim.SetTrigger("landing");
+        if (isGrounded) anim.SetBool("landing", true);
 
         //Flip
-        if (rb.velocity.x > 0) spriteRenderer.flipX = false;
-        else if (rb.velocity.x < 0) spriteRenderer.flipX = true;
+        if (rb.velocity.x > 0)
+        {
+            spriteRenderer.flipX = false;
+            facingDirection = 1;
+        }
+        else if (rb.velocity.x < 0)
+        {
+            spriteRenderer.flipX = true;
+            facingDirection = -1;
+        }
 
         //Get Input as float
         //Tracking last face direction before dash
@@ -157,6 +170,11 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("walk", false);
             anim.SetBool("run", true);
             targetSpeed = horizontal * runSpeed;
+        }
+        else if (horizontal == 0)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", false);
         }
         float speedDiff = targetSpeed - rb.velocity.x;
         float accelRate;

@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 5978949777758644189}
   - component: {fileID: 5978949777758644188}
   - component: {fileID: 5978949777758644184}
+  - component: {fileID: 8244261298716085046}
+  - component: {fileID: 917155905205136541}
   m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Enemy
@@ -176,6 +178,73 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8244261298716085046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978949777758644178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b164dd4f5be0794f91e2f351b3ed59c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyWeaknesses:
+  - attackType: 0
+    weakness: 1
+  - attackType: 1
+    weakness: 1
+  - attackType: 2
+    weakness: 1
+  - attackType: 3
+    weakness: 1
+--- !u!114 &917155905205136541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978949777758644178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e0ad7cfb6d20541994131598843c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useScriptable: 0
+  lifeScriptable: {fileID: 0}
+  life: 500
+  maxLife: 500
+  OnHitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5978949777758644188}
+        m_TargetAssemblyTypeName: Enemy_Melee, Assembly-CSharp
+        m_MethodName: OnHitEnemyStun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnLifeReachZero:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8244261298716085046}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: DeadAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5978949777759156386
 GameObject:
   m_ObjectHideFlags: 0

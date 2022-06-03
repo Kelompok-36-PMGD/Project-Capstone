@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             lastWalkPressed = runDelay;
             lastDirectionPressed = -1f;
         }
-        else if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D) && lastWalkPressed < 0f)
+        else if(Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D))
         {
             anim.SetBool("walk", false);
             anim.SetBool("run", false);

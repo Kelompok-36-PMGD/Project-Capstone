@@ -11,9 +11,12 @@ public class EnemyController : MonoBehaviour
     [Header("Enemy Settings")]
     private Life life;
 
+    Animator anim;
+
     private void Awake()
     {
         life = GetComponent<Life>();
+        anim = GetComponent<Animator>();
     }
 
     //Use this method to decrease enemy health when attacked by player instead of directly call Life.OnHit
@@ -26,10 +29,17 @@ public class EnemyController : MonoBehaviour
             if (type == eW.attackType) multiplier = eW.getModifier(type);
         }
         life.OnHit(((int)Mathf.Ceil(value * multiplier)));
+        anim.SetTrigger("hit");
     }
 
-    public void Dead()
+    public void DeadAnimation()
     {
+        anim.SetBool("death", true);
         Debug.Log("Ded");
+    }
+
+    public void EnemyDeath()
+    {
+        Destroy(gameObject);
     }
 }

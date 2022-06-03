@@ -7,8 +7,8 @@ public class Life : MonoBehaviour
     public Health lifeScriptable;
     public int life;
     public int maxLife;
-    
 
+    public UnityEvent OnHitEvent;
     public UnityEvent OnLifeReachZero;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class Life : MonoBehaviour
         if (useScriptable)
         {
             lifeScriptable.value = lifeScriptable.value - amount < 0 ? 0 : lifeScriptable.value - amount;
-
+            OnHitEvent?.Invoke();
             if(lifeScriptable.value <= 0)
             {
                 OnLifeReachZero?.Invoke();
@@ -37,7 +37,8 @@ public class Life : MonoBehaviour
         else
         {
             life = life - amount < 0 ? 0 : life - amount;
-            if(life <= 0)
+            OnHitEvent?.Invoke();
+            if (life <= 0)
             {
                 OnLifeReachZero?.Invoke();
             }

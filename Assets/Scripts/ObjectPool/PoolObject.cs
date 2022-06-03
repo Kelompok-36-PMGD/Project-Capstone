@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PoolObjectType { DropLauncher, Coin, Potion, SilverKey, GoldenKey}
+public enum PoolObjectType { DropLauncher, Coin, Potion, SilverKey, GoldenKey, SkillObject}
 public class PoolObject : MonoBehaviour
 {
     public PoolObjectType type;

@@ -3248,6 +3248,7 @@ MonoBehaviour:
   - {fileID: 6643379712353971546, guid: e911ce83752738b4393878cd89165fc2, type: 3}
   - {fileID: 5816568843421834516, guid: 38a8adedae9ba8a4b81c9ad713e8af93, type: 3}
   - {fileID: 7808978461747545117, guid: bbcced57863786145996a280d3e2d02f, type: 3}
+  - {fileID: 5208239644861738740, guid: b938713b0c6dd92438d233d5dca87de4, type: 3}
   poolObjects: []
 --- !u!4 &556017369
 Transform:
@@ -4534,9 +4535,29 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 6394453450416113539, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6394453450416113543, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394453450416113544, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
+      propertyPath: _khodamList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394453450416113544, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
+      propertyPath: _khodamList.Array.data[3].damage
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394453450416113544, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
+      propertyPath: _khodamList.Array.data[3].manaCost
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394453450416113544, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
+      propertyPath: _khodamList.Array.data[3].attackType
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6394453450416113548, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
       propertyPath: m_RootOrder

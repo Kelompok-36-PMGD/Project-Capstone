@@ -20,6 +20,7 @@ public class Enemy_Melee : MonoBehaviour
     [SerializeField] private int damage;
 
     private Life playerHealth;
+    bool charging;
 
     // Start is called before the first frame update
     void Awake()
@@ -70,28 +71,28 @@ public class Enemy_Melee : MonoBehaviour
     {
         if(enemyPatrol)patrol.Attacking(attackCooldown, chargeAttackDelay);
         else anim.SetTrigger("charge");
+        charging = true;
         //Delay damage for charge attack animation
         Invoke("DamagePlayer", chargeAttackDelay);
     }
 
+    public void OnHitEnemyStun()
+    {
+        cooldownTimer = 0;
+        charging = false;
+        CancelInvoke("DamagePlayer");
+    }
+
     void DamagePlayer()
     {
-        anim.SetTrigger("attack");
+        anim.SetBool("attack",charging);
         //If the player still inside the enemy attack range, damage them
         if (CheckPlayer()) {
             playerHealth.OnHit(damage);
             PlayerController.instance.HitAnimation(); 
         }
+        charging = false;
     }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Projectile")
-        {
-            //anim.SetTrigger("Die");
-        }
-
-    }
    
 }

@@ -230,7 +230,7 @@ Transform:
   m_LocalScale: {x: 7.4258604, y: 0.6987865, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &129155512 stripped
 Transform:
@@ -630,6 +630,7 @@ MonoBehaviour:
   - {fileID: 6643379712353971546, guid: e911ce83752738b4393878cd89165fc2, type: 3}
   - {fileID: 5816568843421834516, guid: 38a8adedae9ba8a4b81c9ad713e8af93, type: 3}
   - {fileID: 7808978461747545117, guid: bbcced57863786145996a280d3e2d02f, type: 3}
+  - {fileID: 5208239644861738740, guid: b938713b0c6dd92438d233d5dca87de4, type: 3}
   poolObjects: []
 --- !u!4 &556017369
 Transform:
@@ -639,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556017367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.519136, y: -1.6306853, z: -7.3378334}
+  m_LocalPosition: {x: 4.32, y: 6.2, z: -7.3378334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -823,7 +824,7 @@ MonoBehaviour:
   attackHeight: 5
   attackYOffset: 2
   attackCooldown: 2
-  animToDamageDelay: 0
+  chargeAttackDelay: 0
   damage: 10
 --- !u!50 &692749626
 Rigidbody2D:
@@ -960,7 +961,7 @@ Transform:
   - {fileID: 692247112}
   - {fileID: 872887548}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &865035759 stripped
 MonoBehaviour:
@@ -1194,7 +1195,7 @@ Transform:
   m_LocalScale: {x: 7.4258604, y: 0.6987865, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &992246175 stripped
 MonoBehaviour:
@@ -1358,7 +1359,7 @@ Transform:
   m_LocalScale: {x: 47.140312, y: 8.5588, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1262217425 stripped
 MonoBehaviour:
@@ -1799,7 +1800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6394453450416113548, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6394453450416113548, guid: 03b21a2e386dbe34380778d636aaa38e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1932,7 +1933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2799261841690717696, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2799261841690717696, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2085,7 +2086,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3580938227959163465, guid: 4293b6206b690924c8771ba17c9f6ac2, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3580938227959163465, guid: 4293b6206b690924c8771ba17c9f6ac2, type: 3}
       propertyPath: m_LocalPosition.x
