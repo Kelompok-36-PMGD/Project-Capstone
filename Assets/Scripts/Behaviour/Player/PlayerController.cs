@@ -61,12 +61,31 @@ public class PlayerController : MonoBehaviour
 
     public void Dead()
     {
-        Debug.Log("Ded");
+        DeathAnimation();
     }
 
     public void HitAnimation()
     {
-        Debug.Log("Kena hit");
-        //anim.SetTrigger("hit");
+        anim.SetTrigger("hit");
+    }
+
+    public void DeathAnimation()
+    {
+        anim.SetBool("death", true);
+    }
+
+    public bool SkillReady()
+    {
+        if (playerMovement.checkGrounded())
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void UseSkill()
+    {
+        anim.SetTrigger("skill");
+        playerMovement.UseSkill();
     }
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b59f493eb667947880c266a96aa82b, type: 3}
   m_Name: PlayerHealth
   m_EditorClassIdentifier: 
-  value: 10
-  initialValue: 10
-  defaultValue: 10
-  maxValue: 10
-  maxDefaultValue: 10
+  value: 100
+  initialValue: 100
+  defaultValue: 100
+  maxValue: 100
+  maxDefaultValue: 100
   resetDefaultOnEnable: 1
   resetInitialOnEnable: 0

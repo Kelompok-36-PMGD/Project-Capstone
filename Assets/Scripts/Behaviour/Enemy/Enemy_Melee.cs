@@ -69,8 +69,8 @@ public class Enemy_Melee : MonoBehaviour
 
     private void DamageTrigger()
     {
-        if(enemyPatrol)patrol.Attacking(attackCooldown, chargeAttackDelay);
-        else anim.SetTrigger("charge");
+        anim.SetTrigger("charge");
+        if (enemyPatrol)patrol.Attacking(attackCooldown, chargeAttackDelay);
         charging = true;
         //Delay damage for charge attack animation
         Invoke("DamagePlayer", chargeAttackDelay);

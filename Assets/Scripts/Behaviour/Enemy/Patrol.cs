@@ -96,7 +96,6 @@ public class Patrol : MonoBehaviour
 
     public void Attacking(float attackCooldown, float chargeTime)
     {
-        anim.SetTrigger("charge");
         isAttacking = true;
         currentSpeed = 0;
         Invoke("DelayChargeAttack", chargeTime);
@@ -112,6 +111,11 @@ public class Patrol : MonoBehaviour
     {
         currentSpeed = speed;
         isAttacking = false;
+    }
+
+    public void StopMoving()
+    {
+        currentSpeed = 0;
     }
 }
 
