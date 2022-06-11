@@ -88,4 +88,9 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("skill");
         playerMovement.UseSkill();
     }
+
+    public void DropCoin()
+    {
+        ObjectPool.instance.requestObject(PoolObjectType.DropLauncher).GetComponent<ObjectDropLauncher>().requestOneLauncher(transform, PoolObjectType.Coin).GetComponent<Coin>().SetDelayPick();
+    }
 }

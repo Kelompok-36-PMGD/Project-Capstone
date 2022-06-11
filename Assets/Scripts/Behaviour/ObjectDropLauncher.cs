@@ -27,4 +27,16 @@ public class ObjectDropLauncher : MonoBehaviour
         }
         else CancelInvoke("delayLaunch");
     }
+
+    public GameObject requestOneLauncher(Transform pos, PoolObjectType type)
+    {
+        count = 0;
+        transform.position = pos.position;
+        _type = type;
+        _amount = 1;
+        GameObject go = ObjectPool.instance.requestObject(_type).gameObject;
+        go.transform.position = transform.position;
+        go.SetActive(true);
+        return go;
+    }
 }

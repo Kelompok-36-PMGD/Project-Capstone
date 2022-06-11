@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy_Melee : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Enemy_Melee : MonoBehaviour
 
     private Life playerHealth;
     bool charging;
+    public UnityEvent OnDamagePlayer;
 
     // Start is called before the first frame update
     void Awake()
@@ -89,7 +91,8 @@ public class Enemy_Melee : MonoBehaviour
         //If the player still inside the enemy attack range, damage them
         if (CheckPlayer()) {
             playerHealth.OnHit(damage);
-            PlayerController.instance.HitAnimation(); 
+            PlayerController.instance.HitAnimation();
+            OnDamagePlayer.Invoke();
         }
         charging = false;
     }

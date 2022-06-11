@@ -19,10 +19,7 @@ public class Enemy_Ranged : MonoBehaviour
     [Header("Damage")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float chargeAttackDelay;
-    [SerializeField] private int damage;
 
-    bool charging;
-    bool isAlerted;
     float xScale;
 
     void Awake()
@@ -38,7 +35,6 @@ public class Enemy_Ranged : MonoBehaviour
         {
             if (cooldownTimer >= attackCooldown)
             {
-                isAlerted = true;
                 //attack
                 cooldownTimer = 0;
                 DamageTrigger();
@@ -53,10 +49,7 @@ public class Enemy_Ranged : MonoBehaviour
         //cek posisi pemain dengan raycast
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * distanceCollider + transform.up * attackYOffset, new Vector3(boxCollider.bounds.size.x * range, attackHeight, boxCollider.bounds.size.z), 0, Vector2.left, 0, playerLayer);
 
-        if (hit.collider != null)
-        {
-            Debug.Log("weeeeeeeeee");
-        }
+        //if (hit.collider != null)
 
 
         return hit.collider != null;
@@ -70,7 +63,6 @@ public class Enemy_Ranged : MonoBehaviour
     {
         anim.SetTrigger("charge");
         if (enemyPatrol) patrol.Attacking(attackCooldown, chargeAttackDelay);
-        charging = true;
         //Delay damage for charge attack animation
         Invoke("DamagePlayer", chargeAttackDelay);
     }
@@ -81,12 +73,10 @@ public class Enemy_Ranged : MonoBehaviour
         //spawn bullet
         xScale = transform.localScale.x;
         Instantiate(bulletPrefabs, bulletSpawnLocation.transform.position, Quaternion.identity).gameObject.GetComponent<MoveForward>().SetXScale(xScale);
-        charging = false;
     }
     public void OnHitEnemyStun()
     {
         cooldownTimer = 0;
-        charging = false;
         CancelInvoke("DamagePlayer");
     }
 }
