@@ -52,9 +52,11 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     bool doubleJumpIsValid;
     float runChangeDirectionTimer;
+    bool isUsingSkill;
 
     [HideInInspector]public float horizontal;
     [HideInInspector]public bool running;
+    [HideInInspector]public bool isClimbing = false;
     float direction; //Track the current direction the player headed
     [HideInInspector] public int facingDirection;
 
@@ -176,6 +178,11 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("walk", false);
             anim.SetBool("run", false);
         }
+        //Stop moving when using skill
+        if (isUsingSkill)
+        {
+            targetSpeed = 0;
+        }
         float speedDiff = targetSpeed - rb.velocity.x;
         float accelRate;
         //Apply air drag while midAir, false otherwise
@@ -185,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement * Vector2.right);
 
         //Animation Falling
-        if (rb.velocity.y < 0) falling = true;
+        if (rb.velocity.y < 0 && !isClimbing) falling = true;
         else falling = false;
         anim.SetBool("fall", falling);
 
@@ -193,10 +200,13 @@ public class PlayerMovement : MonoBehaviour
         //Jump if onKeyDown or has buffered jump(pressing jump while midAir)
         if (jumping || hasBufferedJump || doubleJump)
         {
-            jumpBufferTime = 0f;
-            jumping = false;
-            doubleJump=false;
-            Jump();
+            if (!isUsingSkill)
+            {
+                jumpBufferTime = 0f;
+                jumping = false;
+                doubleJump = false;
+                Jump();
+            }
         }
         else if (hasBufferedDoubleJump && dashTimer < 0f)
         {
@@ -224,9 +234,25 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
     }
 
-    bool checkGrounded()
+    public bool checkGrounded()
     {
         int groundMask = 1 << groundLayer;
         return Physics2D.Raycast(rb.position, Vector2.down, transform.localScale.y + 0.01f, groundMask);
+    }
+
+    public void UseSkill()
+    {
+        isUsingSkill = true;
+        Invoke("SkillDelay", 0.6f);
+    }
+
+    void SkillDelay()
+    {
+        isUsingSkill = false;
+    }
+
+    public void ResetVelocity()
+    {
+        rb.velocity = new Vector2(0, 0);
     }
 }

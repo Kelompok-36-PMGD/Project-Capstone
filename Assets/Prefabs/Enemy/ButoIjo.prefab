@@ -31,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5978949777758644178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7914, y: -2.48, z: 0}
-  m_LocalScale: {x: -2.2477, y: 1.9435, z: 1}
+  m_LocalPosition: {x: 3.7914, y: -1.5, z: 0}
+  m_LocalScale: {x: -3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 5978949777817620841}
   m_RootOrder: 0
@@ -154,11 +154,14 @@ MonoBehaviour:
     m_Bits: 128
   boxCollider: {fileID: 5978949777758644189}
   distanceCollider: 0.27
-  attackHeight: 2.22
+  attackHeight: 4.5
   attackYOffset: -0.76
   attackCooldown: 3.5
   chargeAttackDelay: 1
   damage: 10
+  OnDamagePlayer:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &5978949777758644184
 Animator:
   serializedVersion: 3

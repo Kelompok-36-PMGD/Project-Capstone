@@ -76,4 +76,16 @@ public class Mana : MonoBehaviour
             return false;
         }
     }
+
+    public bool DecreaseCheck(int value)
+    {
+        if (mana.value - value > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

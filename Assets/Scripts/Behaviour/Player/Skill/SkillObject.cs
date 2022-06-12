@@ -15,6 +15,7 @@ public class SkillObject : MonoBehaviour
     public float deactivateCountdown = 10f;
     int direction=1;
 
+    float xScale;
     bool isSkill;
 
     private void Awake()
@@ -22,6 +23,7 @@ public class SkillObject : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider2D = GetComponent<BoxCollider2D>();
+        xScale = transform.localScale.x;
     }
 
     private void Update()
@@ -41,8 +43,8 @@ public class SkillObject : MonoBehaviour
         Invoke("Deactivate", deactivateCountdown);
         isSkill = false;
         direction = dir;
-        if (direction == 1) spriteRenderer.flipX = false;
-        else spriteRenderer.flipX = true;
+        if (direction == 1) transform.localScale = new Vector3(xScale, transform.localScale.y, transform.localScale.z);
+        else transform.localScale = new Vector3(-xScale, transform.localScale.y, transform.localScale.z);
     }
 
     public void setSkill(SkillList skill, Vector2 pos, int dir)
@@ -61,8 +63,8 @@ public class SkillObject : MonoBehaviour
                 Invoke("Deactivate", deactivateCountdown);
                 isSkill = true;
                 direction = dir;
-                if (direction == 1) spriteRenderer.flipX = false;
-                else spriteRenderer.flipX = true;
+                if (direction == 1) transform.localScale = new Vector3(xScale, transform.localScale.y, transform.localScale.z);
+                else transform.localScale = new Vector3(-xScale, transform.localScale.y, transform.localScale.z);
                 return;
             }
         }

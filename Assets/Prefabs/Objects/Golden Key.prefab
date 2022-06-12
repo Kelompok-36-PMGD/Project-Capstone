@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5816568843421834518}
   - component: {fileID: 1245472663684071377}
   - component: {fileID: 5816568843421834517}
-  - component: {fileID: 8476661775513643934}
   - component: {fileID: 4433600314674249654}
   m_Layer: 10
   m_Name: Golden Key
@@ -156,19 +155,6 @@ MonoBehaviour:
   consumeEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8476661775513643934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5816568843421834516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e1a3a212d3d444488c45d95091b31b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 4
 --- !u!61 &4433600314674249654
 BoxCollider2D:
   m_ObjectHideFlags: 0

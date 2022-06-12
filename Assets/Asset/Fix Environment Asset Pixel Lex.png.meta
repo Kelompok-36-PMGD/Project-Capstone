@@ -1930,7 +1930,7 @@ TextureImporter:
       name: Fix Environment Asset Pixel Lex_84
       rect:
         serializedVersion: 2
-        x: 1221
+        x: 1222
         y: 28
         width: 108
         height: 176
@@ -1951,7 +1951,7 @@ TextureImporter:
       name: Fix Environment Asset Pixel Lex_85
       rect:
         serializedVersion: 2
-        x: 1373
+        x: 1374
         y: 28
         width: 108
         height: 176

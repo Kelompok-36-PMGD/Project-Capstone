@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     Animator anim;
 
+    [HideInInspector] public bool isDeath;
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -23,9 +24,14 @@ public class PlayerController : MonoBehaviour
         runDelay = playerMovement.runKeyPressDelay;
     }
 
+    private void Start()
+    {
+        GameManager.instance.LoadDataFromGameManager();
+    }
+
     private void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        if(!isDeath)horizontal = Input.GetAxisRaw("Horizontal");
         playerMovement.horizontal = horizontal;
 
         lastWalkPressed -= Time.deltaTime;
@@ -61,12 +67,43 @@ public class PlayerController : MonoBehaviour
 
     public void Dead()
     {
-        Debug.Log("Ded");
+        DeathAnimation();
+        PlayerMovement.instance.ResetVelocity();
+        PlayerMovement.instance.enabled = false;
+        gameObject.GetComponent<Skills>().enabled = false;
+        InventorySystem.instance.enabled = false;
+        gameObject.tag = "Untagged";
+        gameObject.layer = 0;
+        Debug.Log("Player is death, currently the movement, skills, and inventory is disabled, and change the tag and layer to default to prevent unintended behaviour. This should shows up a restart confirmation");
     }
 
     public void HitAnimation()
     {
-        Debug.Log("Kena hit");
-        //anim.SetTrigger("hit");
+        anim.SetTrigger("hit");
+    }
+
+    public void DeathAnimation()
+    {
+        anim.SetBool("death", true);
+    }
+
+    public bool SkillReady()
+    {
+        if (playerMovement.checkGrounded())
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public void UseSkill()
+    {
+        anim.SetTrigger("skill");
+        playerMovement.UseSkill();
+    }
+
+    public void DropCoin()
+    {
+        ObjectPool.instance.requestObject(PoolObjectType.DropLauncher).GetComponent<ObjectDropLauncher>().requestOneLauncher(transform, PoolObjectType.Coin).GetComponent<Coin>().SetDelayPick();
     }
 }

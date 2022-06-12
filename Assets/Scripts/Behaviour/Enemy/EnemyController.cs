@@ -35,11 +35,15 @@ public class EnemyController : MonoBehaviour
     public void DeadAnimation()
     {
         anim.SetBool("death", true);
-        Debug.Log("Ded");
     }
 
-    public void EnemyDeath()
+    public void EnemyDeath(float time)
     {
-        Destroy(gameObject);
+        Invoke("DestroyGameObject", time);
+    }
+
+    void DestroyGameObject()
+    {
+        Destroy(transform.parent.gameObject);
     }
 }
