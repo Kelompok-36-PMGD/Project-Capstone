@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: 6280936495747016660}
   - component: {fileID: 678149349634124954}
   - component: {fileID: 678149349634124953}
+  - component: {fileID: 3261949970171788252}
   m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Enemy
@@ -477,6 +478,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3261949970171788252}
+        m_TargetAssemblyTypeName: EnemyDropItem, Assembly-CSharp
+        m_MethodName: dropOnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 678149349634124948}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &678149349634124954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,6 +550,22 @@ MonoBehaviour:
   alwaysWalkAnim: 1
   direction: 1
   checkingTurnAround: 1
+  isAttacking: 0
+--- !u!114 &3261949970171788252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678149349634124955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac247f10e912f564392ab1497a408eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops: []
+  rolls: 0
+  coinDrop: 5
 --- !u!1 &678149349675801127
 GameObject:
   m_ObjectHideFlags: 0

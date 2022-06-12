@@ -15,10 +15,9 @@ public class MoveForward : MonoBehaviour
 
     public void SetXScale(float value)
     {
-        transform.localScale = new Vector3(value, transform.localScale.y, transform.localScale.z);
         xScale = transform.localScale.x;
-        if (xScale > 0) direction = 1f;
-        else direction = -1f;
+        direction = Mathf.Sign(value);
+        transform.localScale = new Vector3(xScale * direction, transform.localScale.y, transform.localScale.z);
     }
 
 }

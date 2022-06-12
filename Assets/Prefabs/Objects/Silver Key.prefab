@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7808978461747545119}
   - component: {fileID: -8728907218594397694}
   - component: {fileID: 7808978461747545116}
-  - component: {fileID: 883299576794639158}
   - component: {fileID: 1390113075444711703}
   m_Layer: 10
   m_Name: Silver Key
@@ -156,19 +155,6 @@ MonoBehaviour:
   consumeEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &883299576794639158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7808978461747545117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e1a3a212d3d444488c45d95091b31b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 3
 --- !u!61 &1390113075444711703
 BoxCollider2D:
   m_ObjectHideFlags: 0

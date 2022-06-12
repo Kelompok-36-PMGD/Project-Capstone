@@ -41,6 +41,7 @@ public class Item : MonoBehaviour
                     FindObjectOfType<InventorySystem>().PickUp(gameObject);
                     //Disable
                     gameObject.SetActive(false);
+                    DontDestroyOnLoad(gameObject);
                 }
                 break;
             case InteractionType.Examine:
@@ -62,4 +63,5 @@ public class Item : MonoBehaviour
         //Invoke (call) the custom event(s)
         customEvent.Invoke();
     }
+
 }

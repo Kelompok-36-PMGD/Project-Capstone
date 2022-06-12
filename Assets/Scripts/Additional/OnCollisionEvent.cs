@@ -7,6 +7,7 @@ public class OnCollisionEvent : MonoBehaviour
 {
     public string tags;
     public UnityEvent OnCollision;
+    public bool collideWithGround = true;
 
     Life hitLife;
 
@@ -14,6 +15,7 @@ public class OnCollisionEvent : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")hitLife = collision.gameObject.GetComponent<Life>();
         if (collision.gameObject.tag == tags) OnCollision.Invoke();
+        if (collision.gameObject.layer == 6 && collideWithGround) Deactivate();
     }
 
     public void Deactivate()

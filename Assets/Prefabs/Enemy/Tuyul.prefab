@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 7883647461336303696}
   - component: {fileID: 7883647461336303703}
   - component: {fileID: 7883647461336303702}
+  - component: {fileID: 8318042238145756470}
   m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Enemy
@@ -394,6 +395,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8318042238145756470}
+        m_TargetAssemblyTypeName: EnemyDropItem, Assembly-CSharp
+        m_MethodName: dropOnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7883647461336303697}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7883647461336303708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +522,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2838624, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8318042238145756470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883647461336303710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac247f10e912f564392ab1497a408eac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops: []
+  rolls: 0
+  coinDrop: 5
 --- !u!1 &7883647461394251490
 GameObject:
   m_ObjectHideFlags: 0

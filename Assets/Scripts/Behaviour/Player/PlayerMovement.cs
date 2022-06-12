@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]public float horizontal;
     [HideInInspector]public bool running;
+    [HideInInspector]public bool isClimbing = false;
     float direction; //Track the current direction the player headed
     [HideInInspector] public int facingDirection;
 
@@ -191,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(movement * Vector2.right);
 
         //Animation Falling
-        if (rb.velocity.y < 0) falling = true;
+        if (rb.velocity.y < 0 && !isClimbing) falling = true;
         else falling = false;
         anim.SetBool("fall", falling);
 
@@ -248,5 +249,10 @@ public class PlayerMovement : MonoBehaviour
     void SkillDelay()
     {
         isUsingSkill = false;
+    }
+
+    public void ResetVelocity()
+    {
+        rb.velocity = new Vector2(0, 0);
     }
 }

@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class LadderMovement : MonoBehaviour
 {
+    Animator anim;
     private float vertical;
     private float speed = 8f;
     private bool isLadder;
     private bool isClimbing;
 
     [SerializeField] private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -25,6 +31,8 @@ public class LadderMovement : MonoBehaviour
 
     private void FixedUpdate() 
     {
+        PlayerMovement.instance.isClimbing = isClimbing;
+        anim.SetBool("climb", isClimbing);
         if (isClimbing)
         {
             rb.gravityScale = 0f;

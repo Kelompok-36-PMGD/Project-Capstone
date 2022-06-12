@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b59f493eb667947880c266a96aa82b, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
-  value: 31
+  value: 0
   initialValue: 0
   defaultValue: 0
   maxValue: 0
   maxDefaultValue: 0
-  resetDefaultOnEnable: 1
-  resetInitialOnEnable: 0
+  resetDefaultOnEnable: 0
+  resetInitialOnEnable: 1
