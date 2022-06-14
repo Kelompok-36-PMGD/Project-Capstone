@@ -29,7 +29,7 @@ public class Skills : MonoBehaviour
         mana = GetComponent<Mana>();
     }
 
-    private void Start()
+    public void StartAssignSkill()
     {
         if (_skillList.Count != 0) _currentSkill = _skillList[0];
     }

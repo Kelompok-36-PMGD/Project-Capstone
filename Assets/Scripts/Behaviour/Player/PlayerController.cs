@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         GameManager.instance.LoadDataFromGameManager();
+        gameObject.GetComponent<Skills>().StartAssignSkill();
     }
 
     private void Update()
