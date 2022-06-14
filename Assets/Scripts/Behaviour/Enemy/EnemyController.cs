@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Enemy Settings")]
     private Life life;
+    public Transform damageText;
 
     Animator anim;
 
@@ -23,13 +24,20 @@ public class EnemyController : MonoBehaviour
     public void TakeDamage(float value,AttackType type)
     {
         float multiplier = 0f;
+        Weakness weakness = Weakness.NORMAL;
         //bad performance wise code, maybe need to change
         foreach(EnemyWeakness eW in enemyWeaknesses)
         {
-            if (type == eW.attackType) multiplier = eW.getModifier(type);
+            if (type == eW.attackType)
+            {
+                multiplier = eW.getModifier(type);
+                weakness = eW.weakness;
+            }
         }
-        life.OnHit(((int)Mathf.Ceil(value * multiplier)));
+        int damage = (int)Mathf.Ceil(value * multiplier);
+        life.OnHit(damage);
         anim.SetTrigger("hit");
+        ShowDamageText(damage, weakness);
     }
 
     public void DeadAnimation()
@@ -45,5 +53,13 @@ public class EnemyController : MonoBehaviour
     void DestroyGameObject()
     {
         Destroy(transform.parent.gameObject);
+    }
+
+    public void ShowDamageText(int damage, Weakness weakness)
+    {
+        GameObject go = ObjectPool.instance.requestObject(PoolObjectType.DamageText).gameObject;
+        go.transform.position = damageText.position;
+        go.GetComponent<TextDamage>().Damage(damage, weakness);
+        go.SetActive(true);
     }
 }

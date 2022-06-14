@@ -11,7 +11,7 @@ public class EnemyWeakness
 {
     //showInInspector
     [SerializeField]public AttackType attackType;
-    [SerializeField]private Weakness weakness;
+    [SerializeField]public Weakness weakness;
 
     public float getModifier(AttackType type)
     {

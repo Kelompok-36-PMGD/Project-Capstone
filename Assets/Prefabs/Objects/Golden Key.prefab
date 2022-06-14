@@ -148,7 +148,7 @@ MonoBehaviour:
   itemName: Golden Key
   interactType: 1
   type: 0
-  descriptionText: Kunci golden untuk membuka peti golden
+  descriptionText: Golden chest key
   customEvent:
     m_PersistentCalls:
       m_Calls: []
