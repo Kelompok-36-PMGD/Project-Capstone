@@ -20,6 +20,7 @@ public class Portal : MonoBehaviour
         else Destroy(gameObject);
 
         anim = GetComponent<Animator>();
+        CheckPortalValid();
     }
 
     private void Update()
@@ -30,7 +31,12 @@ public class Portal : MonoBehaviour
     public void MinionDefeated()
     {
         defeatedEnemies += 1;
-        if(defeatedEnemies == totalEnemies)
+        CheckPortalValid();
+    }
+
+    void CheckPortalValid()
+    {
+        if (defeatedEnemies == totalEnemies)
         {
             //Add another events when portal is opened heree~~~
             isOpened = true;

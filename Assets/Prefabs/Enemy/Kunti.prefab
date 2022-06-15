@@ -392,9 +392,9 @@ MonoBehaviour:
   - attackType: 0
     weakness: 1
   - attackType: 1
-    weakness: 1
+    weakness: 2
   - attackType: 2
-    weakness: 1
+    weakness: 0
   - attackType: 3
     weakness: 1
   damageText: {fileID: 6614979945267725269}
@@ -504,6 +504,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3024525453430341759}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: PortalCountDefeat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 678149349634124953}
+        m_TargetAssemblyTypeName: Patrol, Assembly-CSharp
+        m_MethodName: CancelDelayIdleTOMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &678149349634124954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,7 +549,7 @@ MonoBehaviour:
     m_Bits: 128
   boxCollider: {fileID: 678149349634124948}
   distanceCollider: 0.35
-  attackHeight: 2.09
+  attackHeight: 1.22
   attackYOffset: -0.04
   attackCooldown: 1.5
   chargeAttackDelay: 0.4

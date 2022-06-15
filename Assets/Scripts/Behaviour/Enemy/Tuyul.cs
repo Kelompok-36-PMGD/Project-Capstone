@@ -20,14 +20,11 @@ public class Tuyul : MonoBehaviour
 
     private void Awake()
     {
-        if (tuyulChasePlayer)
-        {
-            enemy_melee = GetComponent<Enemy_Melee>();
-            patrol = GetComponent<Patrol>();
-            anim = GetComponent<Animator>();
-            walkSpeed = patrol.speed;
-            rb = GetComponent<Rigidbody2D>();
-        }
+        enemy_melee = GetComponent<Enemy_Melee>();
+        patrol = GetComponent<Patrol>();
+        anim = GetComponent<Animator>();
+        walkSpeed = patrol.speed;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -46,13 +43,14 @@ public class Tuyul : MonoBehaviour
     }
     public void DecreaseCoinOnHit()
     {
-        GameManager.instance.coinScriptable.value -= 1;
+        if (GameManager.instance.coinScriptable.value > 0) GameManager.instance.coinScriptable.value -= 1;
+        else return;
         PlayerController.instance.DropCoin();
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") && !onStun)
+        if(collision.CompareTag("Player") && !onStun && tuyulChasePlayer)
         {
             if (!patrol.isAttacking) {
                 patrol.DelayAttack();

@@ -76,8 +76,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("This is the last scene, cant proceed to next level..");
             return;
         }
-        int next = currentScene;
         currentScene += 1;
+        int next = currentScene;
         SceneManager.LoadScene(next);
     }
 

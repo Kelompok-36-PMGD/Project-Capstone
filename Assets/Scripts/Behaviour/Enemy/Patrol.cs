@@ -138,6 +138,11 @@ public class Patrol : MonoBehaviour
         isAttacking = true;
     }
 
+    public void CancelDelayIdleTOMove()
+    {
+        CancelInvoke("DelayAttack");
+    }
+
     public void DelayIdleToMove(float time)
     {
         Invoke("DelayAttack", time);

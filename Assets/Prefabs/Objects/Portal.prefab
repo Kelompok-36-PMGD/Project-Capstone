@@ -178,5 +178,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visitShop: 1
-  totalEnemies: 5
+  totalEnemies: 0
   defeatedEnemies: 0

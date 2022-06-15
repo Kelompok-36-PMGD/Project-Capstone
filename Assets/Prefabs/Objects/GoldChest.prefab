@@ -165,6 +165,8 @@ MonoBehaviour:
   itemChanceDrops:
   - prefabs: {fileID: 7818402484066080428, guid: 221abd6aaffc023488471b7ff7edbc90, type: 3}
     rate: 50
+  - prefabs: {fileID: 0}
+    rate: 50
 --- !u!95 &5581175436452208176
 Animator:
   serializedVersion: 3

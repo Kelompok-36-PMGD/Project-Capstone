@@ -16,6 +16,7 @@ public class InteractionSystem : MonoBehaviour
     public GameObject detectedObject;
     [Header("Examine Fields")]
     //Examine window object
+    public GameObject examineAlert;
     public GameObject examineWindow;
     public GameObject grabbedObject;
     public float grabbedObjectYValue;
@@ -29,20 +30,22 @@ public class InteractionSystem : MonoBehaviour
 
     void Update()
     {
-        if(DetectObject())
+        if (DetectObject())
         {
-            if(InteractInput())
+            if (InteractInput())
             {
                 //If we are grabbing something don't interact with other items, drop the grabbed item first
-                if(isGrabbing)
+                if (isGrabbing)
                 {
                     GrabDrop();
                     return;
-                } 
+                }
 
                 detectedObject.GetComponent<Item>().Interact();
             }
+            examineAlert.SetActive(true);
         }
+        else examineAlert.SetActive(false);
 
         //Close the examine window when the player walk away
         if (isExamining && Vector2.Distance(lastInteracted.transform.position, transform.position) > 3f)

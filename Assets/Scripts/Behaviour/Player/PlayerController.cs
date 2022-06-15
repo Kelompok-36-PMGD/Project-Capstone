@@ -107,4 +107,5 @@ public class PlayerController : MonoBehaviour
     {
         ObjectPool.instance.requestObject(PoolObjectType.DropLauncher).GetComponent<ObjectDropLauncher>().requestOneLauncher(transform, PoolObjectType.Coin).GetComponent<Coin>().SetDelayPick();
     }
+
 }

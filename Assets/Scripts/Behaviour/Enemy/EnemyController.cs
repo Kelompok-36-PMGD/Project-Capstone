@@ -62,4 +62,9 @@ public class EnemyController : MonoBehaviour
         go.GetComponent<TextDamage>().Damage(damage, weakness);
         go.SetActive(true);
     }
+
+    public void PortalCountDefeat()
+    {
+        Portal.instance.MinionDefeated();
+    }
 }

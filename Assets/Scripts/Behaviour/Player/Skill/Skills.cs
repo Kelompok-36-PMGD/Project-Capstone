@@ -82,6 +82,15 @@ public class Skills : MonoBehaviour
         _currentSkill = skill;
     }
 
+    public void AddFirstSkill()
+    {
+        SkillList skill = new SkillList();
+        skill.attackType = AttackType.SKILL1;
+        skill.damage = 15;
+        skill.manaCost = 15;
+        AddSkill(skill);
+    }
+
     /// <summary>
     /// This add a skill to the player gameObject through PlayerController scripts
     /// </summary>
