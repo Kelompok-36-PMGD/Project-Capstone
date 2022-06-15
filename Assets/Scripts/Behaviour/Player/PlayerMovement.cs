@@ -149,11 +149,11 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpButtonReleased = true;
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashCooldownTimer <= 0)
+        /*if (Input.GetKeyDown(KeyCode.LeftShift) && dashCooldownTimer <= 0)
         {
             dashCooldownTimer = dashCooldown;
             dashTimer = dashDuration;
-        }
+        }*/
 
         //Jump Ended Early
         if (jumpButtonReleased && jumpEndEarlyTime <= 0f && rb.velocity.y > 0) endedJumpEarly = true;

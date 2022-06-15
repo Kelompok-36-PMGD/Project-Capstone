@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour
     {
         //TESTING
         //if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
+        if (Input.GetKeyUp(KeyCode.R) && !inShop)
+        {
+            SceneManager.LoadScene(currentScene);
+        }
     }
 
     public void SaveDataToGameManager()
