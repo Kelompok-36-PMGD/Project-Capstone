@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         //TESTING
-        //if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
-        if (Input.GetKeyUp(KeyCode.R) && !inShop)
+        if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
+        /*if (Input.GetKeyUp(KeyCode.R) && !inShop)
         {
             SceneManager.LoadScene(currentScene);
-        }
+        }*/
     }
 
     public void SaveDataToGameManager()
@@ -47,7 +47,10 @@ public class GameManager : MonoBehaviour
         inventoryItems = new List<GameObject>();
         skillList = PlayerController.instance.GetComponent<Skills>()._skillList;
         lifeScriptable = PlayerController.instance.GetComponent<Life>().lifeScriptable;
+        lifeScriptable.initialValue = lifeScriptable.value;
+        coinScriptable.initialValue = coinScriptable.value;
         manaScriptable = PlayerController.instance.GetComponent<Mana>().mana;
+        manaScriptable.initialValue = manaScriptable.value;
         foreach(GameObject go in InventorySystem.instance.items)
         {
             inventoryItems.Add(go);
@@ -58,6 +61,9 @@ public class GameManager : MonoBehaviour
     {
         if (!inShop)
         {
+            lifeScriptable.resetInitial();
+            manaScriptable.resetInitial();
+            coinScriptable.resetInitial();
             PlayerController.instance.GetComponent<Skills>()._skillList = skillList;
             PlayerController.instance.GetComponent<Life>().lifeScriptable = lifeScriptable;
             PlayerController.instance.GetComponent<Mana>().mana = manaScriptable;
@@ -65,6 +71,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Data loaded from GameManager!");
         }
     }
+
 
     public void ToShopScene()
     {
@@ -84,5 +91,6 @@ public class GameManager : MonoBehaviour
         int next = currentScene;
         SceneManager.LoadScene(next);
     }
+
 
 }

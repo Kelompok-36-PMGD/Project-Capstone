@@ -134,6 +134,8 @@ GameObject:
   - component: {fileID: 6394453450416113544}
   - component: {fileID: 1740880504470570240}
   - component: {fileID: 5386650353502874306}
+  - component: {fileID: 3880246705312483126}
+  - component: {fileID: 6706265098247153441}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -337,22 +339,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6394453450416113544}
-        m_TargetAssemblyTypeName: Skills, Assembly-CSharp
-        m_MethodName: AddFirstSkill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DelayEventInvoke, Assembly-CSharp
-        m_MethodName: DelayInvoke
-        m_Mode: 4
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ShowDeathPanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -361,9 +351,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6394453450416113550}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-        m_MethodName: PlayerGlowOnDeath
+      - m_Target: {fileID: 5386650353502874306}
+        m_TargetAssemblyTypeName: InvincibleFrame, Assembly-CSharp
+        m_MethodName: activateCollider
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -530,6 +520,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 2
   timer: 0
+--- !u!114 &3880246705312483126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394453450416113543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28cb607efe77e494ba3f01b9c201833f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
+  slider: {fileID: 0}
+  movingSlider: {fileID: 0}
+  _sliderSpeed: 20
+  _particleSys: {fileID: 0}
+--- !u!114 &6706265098247153441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394453450416113543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336c5f9afcdcf3447a75600b29ea1501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DelayEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  valid: 1
 --- !u!1 &7246172932369153553
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 100335488}
   - component: {fileID: 100335487}
+  - component: {fileID: 100335489}
   m_Layer: 0
   m_Name: next scene loader
   m_TagString: Untagged
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100335486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0239623ccb511264c9aa22196ff7f844, type: 3}
   m_Name: 
@@ -166,6 +167,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100335489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100335486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 828992970a045654d8d6a5ba5155c32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextStage: Stage 4
+  increaseLevelInManager: 1
 --- !u!1 &114384327
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,8 +253,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '???:
 
-    Selamatkanlah orang yang kamu cintai bayu dan gunakanlah kekuatan
-    yang saya berikan kepadamu dengan bijak'
+    "Selamatkanlah orang yang kamu cintai, Bayu. Dan gunakanlah
+    kekuatan yang saya berikan kepadamu dengan bijak."'
 --- !u!222 &114384330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -320,7 +335,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '???:
 
-    Saya akan memberikan kekuatan kepadamu untuk mengalahkan mereka'
+    "Saya akan memberikan kekuatan kepadamu untuk mengalahkan mereka."'
 --- !u!222 &195666658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -400,7 +415,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Orang  tersebut berbicara  menyampaikan beberapa kata untuk bayu
+  m_Text: Orang tersebut berbicara menyampaikan beberapa kata untuk Bayu.
 --- !u!222 &291089745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -670,8 +685,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lama kelaman bayu pun tersadar dari pingsannya dan mulai mengejar kekasihnya
-    yang dibawa oleh buto ijo
+  m_Text: Lama kelaman, Bayu pun tersadar dari pingsannya dan mulai mengejar kekasihnya
+    yang dibawa oleh buto ijo.
 --- !u!222 &515697299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -903,10 +918,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Setelah bayu kalah bertarung melawan buto ijo
+  m_Text: 'Setelah Bayu kalah bertarung melawan buto ijo,
 
     Bayu pingsan dalam
-    waktu yang cukup lama'
+    waktu yang cukup lama.'
 --- !u!222 &693526942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1110,8 +1125,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7245, y: -1.5975}
-  m_SizeDelta: {x: 1557.3994, y: 237.7825}
+  m_AnchoredPosition: {x: 0.7245, y: -17.2653}
+  m_SizeDelta: {x: 1557.3994, y: 269.118}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136705650
 MonoBehaviour:
@@ -1148,8 +1163,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: '???:
 
-    Kamu dapat meningkatkan kekuatan yang saya berikan seiring berjalannya
-    waktu untuk dapat mengalahkan makhluk yang lebih kuat'
+    "Kamu dapat meningkatkan kekuatan yang Saya berikan seiring
+    berjalannya waktu untuk dapat mengalahkan makhluk yang lebih kuat."'
 --- !u!222 &1136705651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1248,7 +1263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Petualangan bayu pun dimulai
+  m_Text: Petualangan Bayu pun dimulai.
 --- !u!222 &1165728517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1398,7 +1413,7 @@ VideoPlayer:
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
@@ -1773,7 +1788,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dalam alam bawah sadarnya pada saat pingsan tiba tiba bayu mendangar seseorang
+  m_Text: Dalam alam bawah sadarnya pada saat pingsan, tiba-tiba Bayu mendangar seseorang.
 --- !u!222 &2102600339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1871,9 +1886,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "??? : \nNak bayu jikalau kamu ingin menyelamatkan kekasihmu kamu harus 
-    mengalahkan makhluk tersebut dan kamu membutuhkan kekuatan yang besar untuk dapat
-    mengalahkannya"
+  m_Text: "??? : \n\"Nak bayu jikalau kamu ingin menyelamatkan kekasihmu, Kamu harus 
+    mengalahkan makhluk tersebut dan Kamu membutuhkan kekuatan yang besar untuk dapat
+    mengalahkannya.\""
 --- !u!222 &2127824714
 CanvasRenderer:
   m_ObjectHideFlags: 0

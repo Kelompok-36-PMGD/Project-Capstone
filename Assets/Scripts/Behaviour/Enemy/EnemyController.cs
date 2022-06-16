@@ -42,6 +42,7 @@ public class EnemyController : MonoBehaviour
 
     public void DeadAnimation()
     {
+        PlaySFXDeath();
         anim.SetBool("death", true);
     }
 
@@ -66,5 +67,10 @@ public class EnemyController : MonoBehaviour
     public void PortalCountDefeat()
     {
         Portal.instance.MinionDefeated();
+    }
+
+    public void PlaySFXDeath()
+    {
+        PlayerSound.instance.DeathSound();
     }
 }

@@ -19,6 +19,7 @@ public class Health : ScriptableObject
         if (resetDefaultOnEnable)
         {
             resetDefault();
+            resetInitialToDefault();
         }
         else if (resetInitialOnEnable) resetInitial();
     }
@@ -38,6 +39,11 @@ public class Health : ScriptableObject
     public void setInitialValue(int value)
     {
         initialValue = value;
+    }
+
+    public void resetInitialToDefault()
+    {
+        initialValue = defaultValue;
     }
 
 }

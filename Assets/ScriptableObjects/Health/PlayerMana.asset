@@ -17,5 +17,5 @@ MonoBehaviour:
   defaultValue: 20
   maxValue: 100
   maxDefaultValue: 100
-  resetDefaultOnEnable: 0
-  resetInitialOnEnable: 1
+  resetDefaultOnEnable: 1
+  resetInitialOnEnable: 0

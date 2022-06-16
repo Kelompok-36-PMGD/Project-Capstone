@@ -50,6 +50,18 @@ public class Skills : MonoBehaviour
                     skillTimer = 0f;
                     fireRateTimer = 0f;
                     Invoke("SkillDelay", _animDelay);
+                    switch (_currentSkill.attackType)
+                    {
+                        case AttackType.SKILL1:
+                            PlayerSound.instance.Skill1Sound();
+                            break;
+                        case AttackType.SKILL2:
+                            PlayerSound.instance.Skill2Sound();
+                            break;
+                        case AttackType.SKILL3:
+                            PlayerSound.instance.Skill3Sound();
+                            break;
+                    }
                 }
             }
         }

@@ -42,6 +42,7 @@ public class Chest : MonoBehaviour
         int index = getKeyIndex();
         if (index >= 0)
         {
+            PlayerSound.instance.OpenChestSound();
             Destroy(InventorySystem.instance.items[index], 0.1f);
             InventorySystem.instance.items.RemoveAt(index);
             Debug.Log("Player has the correct key and opened the chest, so the key disappeared");

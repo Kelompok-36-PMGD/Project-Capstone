@@ -23,6 +23,7 @@ public class Enemy_Melee : MonoBehaviour
     private Life playerHealth;
     bool charging;
     public UnityEvent OnDamagePlayer;
+    public UnityEvent OnPlayerAtRange;
 
     // Start is called before the first frame update
     void Awake()
@@ -43,6 +44,7 @@ public class Enemy_Melee : MonoBehaviour
                 //attack
                 DamageTrigger();
                 cooldownTimer = 0;
+                OnPlayerAtRange.Invoke();
                 //anim
                 //anim.SetTrigger("MeleeAttack");
             }

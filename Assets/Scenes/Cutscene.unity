@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -270,8 +270,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Bayu pergi mendaki bersama kekasihnya, Dia sedang menunggu kekasihnya
-    laras yang pergi ke sumber air untuk persiapan mulai memasak
+  m_Text: 'Bayu pergi mendaki bersama kekasihnya, Dia sedang menunggu kekasihnya,
+    Laras yang pergi ke sumber air untuk persiapan mulai memasak
 
 '
 --- !u!222 &138294306
@@ -647,6 +647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 828992970a045654d8d6a5ba5155c32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextStage: Stage 3
+  increaseLevelInManager: 0
 --- !u!1 &916809518
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +702,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Laras:
 
-    TOLONGGGG.....'
+    "TOLONGGGG.....!!"'
 --- !u!222 &916809521
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1004,7 +1006,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: namun tiba-tiba......
+  m_Text: Namun tiba-tiba......
 --- !u!222 &1194796636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1202,10 +1204,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "gunung tersebut mempunyai nama yaitu  GUNUNG CALAKA seperti namanya calaka
-    yang berarti cilaka atau kecelakaan banyak pendaki hilang di gunung tersebut
-    yang kebanyakan wanita tapi tidak banyak orang luar yang tau karena seakan akan
-    itu di tutupi\r\n\r"
+  m_Text: "Gunung tersebut mempunyai nama yaitu  \"Gunung Cakala\". Seperti namanya,
+    Calaka berarti \"cilaka\" atau kecelakaan. Banyak pendaki hilang di gunung tersebut
+    yang kebanyakan adalah seorang wanita, tapi tidak banyak orang luar yang tau
+    karena seakan akan hal itu di tutupi\r"
 --- !u!222 &1260098842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1370,8 +1372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Suatu hari terdapat pendaki yang sedang menatap api unggun kita pangil
-    saja Bayu
+  m_Text: Suatu hari terdapat pendaki yang sedang menatap api unggun bernama Bayu
 --- !u!222 &1523039482
 CanvasRenderer:
   m_ObjectHideFlags: 0

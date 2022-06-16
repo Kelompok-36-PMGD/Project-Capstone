@@ -38,7 +38,7 @@ public class InvincibleFrame : MonoBehaviour
         Physics2D.IgnoreLayerCollision(7, 11, true);
         Physics2D.IgnoreLayerCollision(7, 12, true);
     }
-    private void activateCollider()
+    public void activateCollider()
     {
         Physics2D.IgnoreLayerCollision(7, 0, false);
         Physics2D.IgnoreLayerCollision(7, 8, false);

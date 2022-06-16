@@ -47,27 +47,26 @@ public class Shop : MonoBehaviour
         descriptionText.text = shopList[0].description;
         selectedSkill = shopList[0].skill;
         currentPrice = shopList[0].price;
-        if(GameManager.instance.coinScriptable.value > currentPrice)
+        if (skills[0].attackType == selectedSkill.attackType || skills.Contains(selectedSkill))
         {
-            notEnough.SetActive(false);
-            unlockButton.GetComponent<Button>().interactable = true;
-            if (skills[0].attackType == selectedSkill.attackType)
-            {
-                unlockButton.GetComponent<Button>().interactable = false;
-                bought = true;
-            }
-            else
-            {
-                unlockButton.GetComponent<Button>().interactable = true;
-                bought = false;
-            }
+            unlockButton.GetComponent<Button>().interactable = false;
+            bought = true;
         }
         else
         {
-            notEnough.SetActive(true);
-            unlockButton.GetComponent<Button>().interactable = false;
-        }
+            bought = false;
+            if (GameManager.instance.coinScriptable.value > currentPrice)
+            {
+                notEnough.SetActive(false);
+                unlockButton.GetComponent<Button>().interactable = true;
 
+            }
+            else
+            {
+                notEnough.SetActive(true);
+                unlockButton.GetComponent<Button>().interactable = false;
+            }
+        }
         
     }
     public void Skill2Button()
@@ -78,27 +77,26 @@ public class Shop : MonoBehaviour
         currentPrice = shopList[1].price;
         descriptionText.text = shopList[1].description;
         selectedSkill = shopList[1].skill;
-        if (GameManager.instance.coinScriptable.value > currentPrice)
+
+        if (skills.Contains(selectedSkill))
         {
-            notEnough.SetActive(false);
-            unlockButton.GetComponent<Button>().interactable = true;
-            if (skills.Contains(selectedSkill))
-            {
-                unlockButton.GetComponent<Button>().interactable = false;
-                bought = true;
-            }
-            else
-            {
-                unlockButton.GetComponent<Button>().interactable = true;
-                bought = false;
-            }
+            unlockButton.GetComponent<Button>().interactable = false;
+            bought = true;
         }
         else
         {
-            notEnough.SetActive(true);
-            unlockButton.GetComponent<Button>().interactable = false;
+            bought = false;
+            if (GameManager.instance.coinScriptable.value > currentPrice)
+            {
+                notEnough.SetActive(false);
+                unlockButton.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                notEnough.SetActive(true);
+                unlockButton.GetComponent<Button>().interactable = false;
+            }
         }
-
         
     }
     public void Skill3Button()
@@ -109,32 +107,32 @@ public class Shop : MonoBehaviour
         currentPrice = shopList[2].price;
         descriptionText.text = shopList[2].description;
         selectedSkill = shopList[2].skill;
-        if (GameManager.instance.coinScriptable.value > currentPrice)
+        if (skills.Contains(selectedSkill))
         {
-            notEnough.SetActive(false);
-            unlockButton.GetComponent<Button>().interactable = true;
-            if (skills.Contains(selectedSkill))
-            {
-                unlockButton.GetComponent<Button>().interactable = false;
-                bought = true;
-            }
-            else
-            {
-                unlockButton.GetComponent<Button>().interactable = true;
-                bought = false;
-            }
+            unlockButton.GetComponent<Button>().interactable = false;
+            bought = true;
         }
         else
         {
-            notEnough.SetActive(true);
-            unlockButton.GetComponent<Button>().interactable = false;
+            bought = false;
+            if (GameManager.instance.coinScriptable.value > currentPrice)
+            {
+                notEnough.SetActive(false);
+                unlockButton.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                notEnough.SetActive(true);
+                unlockButton.GetComponent<Button>().interactable = false;
+            }
         }
 
-        
+
     }
 
     public void UnlockButton()
     {
+        PlayerSound.instance.BuySkillSound();
         skills.Add(selectedSkill);
         unlockButton.GetComponent<Button>().interactable = false;
         GameManager.instance.coinScriptable.value -= currentPrice;
@@ -144,6 +142,7 @@ public class Shop : MonoBehaviour
     public void ContinueButton()
     {
         GameManager.instance.inShop = false;
+        GameManager.instance.coinScriptable.initialValue = GameManager.instance.coinScriptable.value;
         GameManager.instance.NextLevel();
     }
 }

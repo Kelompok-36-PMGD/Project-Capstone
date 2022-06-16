@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -479,7 +479,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bayu : \nAYO SEMANGAT..."
+  m_Text: "Bayu : \n\"AYO SEMANGAT...\""
 --- !u!222 &426355523
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -804,8 +804,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bayu pun terus menelusuri hutan dan mengikuti aura yang ditinggalkan buto
-    ijo
+  m_Text: Bayu pun terus menelusuri hutan dan mengikuti aura yang ditinggalkan Buto
+    Ijo
 --- !u!222 &590567906
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -903,8 +903,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bayu : \nAku harus berlatih lagi seiring berjalannya waktu  untuk menyelamatkan
-    laras"
+  m_Text: "Bayu : \n\"Aku harus berlatih lagi seiring berjalannya waktu untuk menyelamatkan
+    Laras.\""
 --- !u!222 &655937170
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -984,7 +984,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Perjalanan bayu untuk mencari kekasihnya pun masih berlanjut
+  m_Text: Perjalanan Bayu untuk mencari kekasihnya pun masih berlanjut
 --- !u!222 &791105863
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1082,8 +1082,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bayu : \nBawahannya saja sudah sekuat itu apalagi buto ijo yang memerintahkan
-    makhluk tersebut"
+  m_Text: "Bayu : \n\"Bawahannya saja sudah sekuat itu, apalagi buto ijo yang memerintahkan
+    makhluk tersebut.\""
 --- !u!222 &849207227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1678,7 +1678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bayu : \nAkhirnya aku berhasil mengalahkan banaspati\n"
+  m_Text: "Bayu : \n\"Akhirnya aku berhasil mengalahkan Banaspati.\"\n"
 --- !u!222 &1868893306
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1833,8 +1833,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bayu : \nDia cukup kuat karena dia merupakan salah satu dari beberapa
-    jenderal yang diperintahkan oleh buto ijo\n"
+  m_Text: "Bayu : \n\"Dia cukup kuat karena dia merupakan salah satu dari beberapa
+    jenderal yang diperintahkan oleh buto ijo.\"\n"
 --- !u!222 &1919304228
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1914,8 +1914,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bayu berhasil mengalahkan banaspati namun bayu masih belum menemukan keberadaan
-    pasti dimana buto ijo tersebut membawa laras
+  m_Text: Bayu berhasil mengalahkan Banaspati, namun Bayu masih belum menemukan keberadaan
+    pasti dimana Buto Ijo tersebut membawa Laras
 --- !u!222 &2029056413
 CanvasRenderer:
   m_ObjectHideFlags: 0

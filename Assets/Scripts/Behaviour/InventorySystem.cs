@@ -55,6 +55,9 @@ public class InventorySystem : MonoBehaviour
     //Add the item to the items list
     public void PickUp(GameObject item)
     {
+        //Sound
+        if (item.GetComponent<Item>().itemName == "Silver Key" || item.GetComponent<Item>().itemName == "Golden Key") PlayerSound.instance.PickKeySound();
+
         items.Add(item);
         Update_UI();
     }
@@ -105,6 +108,7 @@ public class InventorySystem : MonoBehaviour
     {
         if (items[id].GetComponent<Item>().type== Item.ItemType.Consumables)
         {
+            //if (items[id].GetComponent<Item>().itemName == "Potion") PlayerSound.instance.DrinkSound();
             Debug.Log($"CONSUMED {items[id].name}");
             //Invoke the cunsume custome event
             items[id].GetComponent<Item>().consumeEvent.Invoke();
@@ -137,5 +141,16 @@ public class InventorySystem : MonoBehaviour
             if (items[index].name == "Golden Key" || items[index].name == "Silver Key") DropItemToGround(index);
             else index++;
         }
+    }
+
+    public void ClearAllInventory()
+    {
+        int loop = items.Count;
+        for (int i = 0; i < loop; i++)
+        {
+            Destroy(items[i], 0.1f);
+            items.RemoveAt(i);
+        }
+        Update_UI();
     }
 }

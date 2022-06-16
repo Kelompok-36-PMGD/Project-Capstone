@@ -69,15 +69,28 @@ public class PlayerController : MonoBehaviour
     public void Dead()
     {
         DeathAnimation();
+        DisableInput();
+        Debug.Log("Player is death, currently the movement, skills, and inventory is disabled, and change the tag and layer to default to prevent unintended behaviour. This should shows up a restart confirmation");
+    }
+
+    public void DisableInput()
+    {
         PlayerMovement.instance.ResetVelocity();
         PlayerMovement.instance.enabled = false;
         gameObject.GetComponent<Skills>().enabled = false;
         InventorySystem.instance.enabled = false;
         gameObject.tag = "Untagged";
         gameObject.layer = 0;
-        Debug.Log("Player is death, currently the movement, skills, and inventory is disabled, and change the tag and layer to default to prevent unintended behaviour. This should shows up a restart confirmation");
     }
 
+    public void EnableInput()
+    {
+        PlayerMovement.instance.enabled = true;
+        gameObject.GetComponent<Skills>().enabled = true;
+        InventorySystem.instance.enabled = true;
+        gameObject.tag = "Player";
+        gameObject.layer = 7;
+    }
     public void HitAnimation()
     {
         anim.SetTrigger("hit");

@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainSceneLoader : MonoBehaviour
 {
+    public string nextStage;
+    public bool increaseLevelInManager;
+
     void OnEnable()
     {
-        SceneManager.LoadScene("Stage1", LoadSceneMode.Single);
+        if (increaseLevelInManager) GameManager.instance.currentScene += 1;
+        SceneManager.LoadScene(nextStage, LoadSceneMode.Single);
     }
 }

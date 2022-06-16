@@ -196,6 +196,12 @@ public class PlayerMovement : MonoBehaviour
         else falling = false;
         anim.SetBool("fall", falling);
 
+        //Sound
+        if (running && isGrounded) PlayerSound.instance.PlayRun(true);
+        else PlayerSound.instance.PlayRun(false);
+        if (!running && isGrounded && horizontal != 0) PlayerSound.instance.PlayWalk(true);
+        else PlayerSound.instance.PlayWalk(false);
+
 
         //Jump if onKeyDown or has buffered jump(pressing jump while midAir)
         if (jumping || hasBufferedJump || doubleJump)
@@ -228,6 +234,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        PlayerSound.instance.JumpSound();
         anim.SetTrigger("jump");
         jumpEndEarlyTime = jumpEndEarlyMinimal; //Reset the timer so that the player will jump at least until this value < 0
         rb.velocity = new Vector2(rb.velocity.x, 0f); //Reset the jump so that the added Force stay constant
