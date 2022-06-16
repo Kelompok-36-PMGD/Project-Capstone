@@ -3819,12 +3819,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinScriptable: {fileID: 11400000, guid: ba5aecbfb0c1aca41810039a9a274410, type: 2}
   skillList: []
-  lifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
-  manaScriptable: {fileID: 11400000, guid: 982f1b12c1f2ca04d9fbd8ab1e04c712, type: 2}
+  lifeScriptable: {fileID: 0}
+  manaScriptable: {fileID: 0}
   inventoryItems: []
-  currentScene: 1
+  currentScene: 0
   shopScene: 0
-  lastScene: 1
+  lastScene: 0
   inShop: 0
 --- !u!4 &1589996563
 Transform:
@@ -4961,6 +4961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5978949777758644189, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5978949777758644190, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
       propertyPath: m_Sprite
       value: 
