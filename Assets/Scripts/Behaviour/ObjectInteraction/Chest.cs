@@ -47,9 +47,10 @@ public class Chest : MonoBehaviour
             Debug.Log("Player has the correct key and opened the chest, so the key disappeared");
             anim.SetTrigger("Open");
             ObjectPool.instance.requestObject(PoolObjectType.DropLauncher).gameObject.GetComponent<ObjectDropLauncher>().requestLauncher(transform, PoolObjectType.Coin, coinDrop);
-            foreach(GameObject go in itemFixedDrops)
+            foreach (GameObject go in itemFixedDrops)
             {
-                Instantiate(go, transform.position, Quaternion.identity);
+                GameObject tempGo = Instantiate(go, transform.position, Quaternion.identity);
+                tempGo.name = tempGo.name.Replace("(Clone)", "");
             }
 
             //count all of the drops rate
@@ -63,7 +64,7 @@ public class Chest : MonoBehaviour
             {
                 if (random <= drop.rate)
                 {
-                    Instantiate(drop.prefabs, transform.position, Quaternion.identity);
+                    if(drop.prefabs)Instantiate(drop.prefabs, transform.position, Quaternion.identity);
                 }
                 else
                 {

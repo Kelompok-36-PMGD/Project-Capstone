@@ -29,7 +29,7 @@ public class Skills : MonoBehaviour
         mana = GetComponent<Mana>();
     }
 
-    private void Start()
+    public void StartAssignSkill()
     {
         if (_skillList.Count != 0) _currentSkill = _skillList[0];
     }
@@ -64,9 +64,9 @@ public class Skills : MonoBehaviour
                 else ObjectPool.instance.requestObject(PoolObjectType.SkillObject).gameObject.GetComponent<SkillObject>().setNormal(_normalAttack, new Vector2(transform.position.x - 1f, transform.position.y), PlayerMovement.instance.facingDirection);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1) && _skillList[0] != null) _currentSkill = _skillList[0];
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && _skillList[1] != null) _currentSkill = _skillList[1];
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && _skillList[2] != null) _currentSkill = _skillList[2];
+        if (Input.GetKeyDown(KeyCode.Alpha1) && _skillList.Count > 0) _currentSkill = _skillList[0];
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && _skillList.Count > 1) _currentSkill = _skillList[1];
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && _skillList.Count > 2) _currentSkill = _skillList[2];
     }
 
     void SkillDelay()
@@ -80,6 +80,15 @@ public class Skills : MonoBehaviour
     {
         _skillList.Add(skill);
         _currentSkill = skill;
+    }
+
+    public void AddFirstSkill()
+    {
+        SkillList skill = new SkillList();
+        skill.attackType = AttackType.SKILL1;
+        skill.damage = 15;
+        skill.manaCost = 15;
+        AddSkill(skill);
     }
 
     /// <summary>

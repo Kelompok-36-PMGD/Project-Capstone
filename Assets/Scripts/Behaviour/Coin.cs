@@ -46,6 +46,7 @@ public class Coin : MonoBehaviour
 
     public void SetDelayPick()
     {
+        followingPlayer = false;
         gameObject.GetComponent<BoxCollider2D>().enabled = false;
         Invoke("DelayPick", 2f);
     }

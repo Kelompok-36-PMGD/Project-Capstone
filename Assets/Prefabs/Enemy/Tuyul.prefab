@@ -82,7 +82,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,7 +213,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -329,9 +329,9 @@ MonoBehaviour:
   - attackType: 1
     weakness: 1
   - attackType: 2
-    weakness: 1
+    weakness: 2
   - attackType: 3
-    weakness: 1
+    weakness: 0
   damageText: {fileID: 4277598562404053379}
 --- !u!114 &3687125186354561809
 MonoBehaviour:
@@ -451,6 +451,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5618336490134250682}
+        m_TargetAssemblyTypeName: EnemyController, Assembly-CSharp
+        m_MethodName: PortalCountDefeat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7883647461336303708}
+        m_TargetAssemblyTypeName: Patrol, Assembly-CSharp
+        m_MethodName: CancelDelayIdleTOMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7883647461336303708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPatrol: 1
-  range: 1.5
+  range: 2.5
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -527,7 +551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 4
-  tuyulChasePlayer: 1
+  tuyulChasePlayer: 0
 --- !u!61 &7883647461336303702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -654,7 +678,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

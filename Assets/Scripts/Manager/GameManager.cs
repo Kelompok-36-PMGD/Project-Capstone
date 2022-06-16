@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour
     {
         //TESTING
         //if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
+        if (Input.GetKeyUp(KeyCode.R) && !inShop)
+        {
+            SceneManager.LoadScene(currentScene);
+        }
     }
 
     public void SaveDataToGameManager()
@@ -76,8 +80,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("This is the last scene, cant proceed to next level..");
             return;
         }
-        int next = currentScene;
         currentScene += 1;
+        int next = currentScene;
         SceneManager.LoadScene(next);
     }
 

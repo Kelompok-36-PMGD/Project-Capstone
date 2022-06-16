@@ -31,9 +31,12 @@ public class Shop : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(bought);
         if (currentPrice == 0) priceText.text = "Free";
-        if (bought) priceText.text = "Bought";
+        if (bought)
+        {
+            notEnough.SetActive(false);
+            priceText.text = "Bought";
+        }
     }
 
     public void Skill1Button()
@@ -48,6 +51,16 @@ public class Shop : MonoBehaviour
         {
             notEnough.SetActive(false);
             unlockButton.GetComponent<Button>().interactable = true;
+            if (skills[0].attackType == selectedSkill.attackType)
+            {
+                unlockButton.GetComponent<Button>().interactable = false;
+                bought = true;
+            }
+            else
+            {
+                unlockButton.GetComponent<Button>().interactable = true;
+                bought = false;
+            }
         }
         else
         {
@@ -55,16 +68,7 @@ public class Shop : MonoBehaviour
             unlockButton.GetComponent<Button>().interactable = false;
         }
 
-        if (skills[0].attackType == selectedSkill.attackType)
-        {
-            unlockButton.GetComponent<Button>().interactable = false;
-            bought = true;
-        }
-        else
-        {
-            unlockButton.GetComponent<Button>().interactable = true;
-            bought = false;
-        }
+        
     }
     public void Skill2Button()
     {
@@ -78,6 +82,16 @@ public class Shop : MonoBehaviour
         {
             notEnough.SetActive(false);
             unlockButton.GetComponent<Button>().interactable = true;
+            if (skills.Contains(selectedSkill))
+            {
+                unlockButton.GetComponent<Button>().interactable = false;
+                bought = true;
+            }
+            else
+            {
+                unlockButton.GetComponent<Button>().interactable = true;
+                bought = false;
+            }
         }
         else
         {
@@ -85,16 +99,7 @@ public class Shop : MonoBehaviour
             unlockButton.GetComponent<Button>().interactable = false;
         }
 
-        if (skills.Contains(selectedSkill))
-        {
-            unlockButton.GetComponent<Button>().interactable = false;
-            bought = true;
-        }
-        else
-        {
-            unlockButton.GetComponent<Button>().interactable = true;
-            bought = false;
-        }
+        
     }
     public void Skill3Button()
     {
@@ -108,6 +113,16 @@ public class Shop : MonoBehaviour
         {
             notEnough.SetActive(false);
             unlockButton.GetComponent<Button>().interactable = true;
+            if (skills.Contains(selectedSkill))
+            {
+                unlockButton.GetComponent<Button>().interactable = false;
+                bought = true;
+            }
+            else
+            {
+                unlockButton.GetComponent<Button>().interactable = true;
+                bought = false;
+            }
         }
         else
         {
@@ -115,16 +130,7 @@ public class Shop : MonoBehaviour
             unlockButton.GetComponent<Button>().interactable = false;
         }
 
-        if (skills.Contains(selectedSkill))
-        {
-            unlockButton.GetComponent<Button>().interactable = false;
-            bought = true;
-        }
-        else
-        {
-            unlockButton.GetComponent<Button>().interactable = true;
-            bought = false;
-        }
+        
     }
 
     public void UnlockButton()

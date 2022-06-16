@@ -82,12 +82,13 @@ public class Enemy_Melee : MonoBehaviour
     {
         cooldownTimer = 0;
         charging = false;
+        anim.ResetTrigger("attack");
         CancelInvoke("DamagePlayer");
     }
 
     void DamagePlayer()
     {
-        anim.SetBool("attack",charging);
+        anim.SetTrigger("attack");
         //If the player still inside the enemy attack range, damage them
         if (CheckPlayer()) {
             playerHealth.OnHit(damage);

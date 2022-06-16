@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5978949777758644184}
   - component: {fileID: 8244261298716085046}
   - component: {fileID: 917155905205136541}
+  - component: {fileID: 4578086482710721458}
   m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Enemy
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -178,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c096cf89e45003244b89bf2cbd57f4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPatrol: 0
+  enemyPatrol: 1
   range: 1.49
   playerLayer:
     serializedVersion: 2
@@ -189,7 +190,7 @@ MonoBehaviour:
   attackYOffset: -0.76
   attackCooldown: 3.5
   chargeAttackDelay: 1
-  damage: 10
+  damage: 50
   OnDamagePlayer:
     m_PersistentCalls:
       m_Calls: []
@@ -265,6 +266,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4578086482710721458}
+        m_TargetAssemblyTypeName: UnityEngine.MonoBehaviour, UnityEngine
+        m_MethodName: CancelInvoke
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DelayChargeAttack
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4578086482710721458}
+        m_TargetAssemblyTypeName: Patrol, Assembly-CSharp
+        m_MethodName: StopMoving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4578086482710721458}
+        m_TargetAssemblyTypeName: Patrol, Assembly-CSharp
+        m_MethodName: DelayIdleToMove
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnLifeReachZero:
     m_PersistentCalls:
       m_Calls:
@@ -280,6 +317,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4578086482710721458}
+        m_TargetAssemblyTypeName: Patrol, Assembly-CSharp
+        m_MethodName: CancelDelayIdleTOMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4578086482710721458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978949777758644178}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4544c96b4cfa8c48bedd0c073c09068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnAround:
+  - {fileID: 5978949777759156397}
+  - {fileID: 5978949778216179225}
+  turnAroundMask:
+    serializedVersion: 2
+    m_Bits: 512
+  speed: 4
+  moveDelay: 2
+  alwaysWalkAnim: 0
+  direction: -1
+  checkingTurnAround: 1
+  isAttacking: 0
 --- !u!1 &5978949777759156386
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +404,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -473,7 +546,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
