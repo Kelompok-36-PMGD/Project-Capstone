@@ -98,6 +98,9 @@ TextureImporter:
   - first:
       213: -935297519376974827
     second: Fix Button Asset Pixel Art Game_31
+  - first:
+      213: -8391921217845718647
+    second: Fix Button Asset Pixel Art Game_32
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -183,6 +186,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -190,10 +217,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_0
       rect:
         serializedVersion: 2
-        x: 96
-        y: 633
-        width: 211
-        height: 103
+        x: 72
+        y: 643
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +238,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_1
       rect:
         serializedVersion: 2
-        x: 318
-        y: 634
-        width: 211
-        height: 102
+        x: 303
+        y: 643
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +259,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_2
       rect:
         serializedVersion: 2
-        x: 540
-        y: 633
-        width: 319
-        height: 103
+        x: 534
+        y: 643
+        width: 331
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +280,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_3
       rect:
         serializedVersion: 2
-        x: 871
-        y: 633
-        width: 96
-        height: 103
+        x: 877
+        y: 643
+        width: 101
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +301,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_4
       rect:
         serializedVersion: 2
-        x: 979
-        y: 633
-        width: 97
-        height: 103
+        x: 989
+        y: 643
+        width: 101
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +322,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_5
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 633
-        width: 97
-        height: 103
+        x: 1102
+        y: 643
+        width: 101
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +343,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 519
-        width: 211
-        height: 103
+        x: 72
+        y: 524
+        width: 219
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,10 +364,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_7
       rect:
         serializedVersion: 2
-        x: 318
-        y: 519
-        width: 211
-        height: 103
+        x: 303
+        y: 524
+        width: 219
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +385,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_8
       rect:
         serializedVersion: 2
-        x: 540
-        y: 519
-        width: 319
-        height: 103
+        x: 533
+        y: 524
+        width: 332
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +406,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_9
       rect:
         serializedVersion: 2
-        x: 871
-        y: 519
-        width: 96
-        height: 103
+        x: 877
+        y: 524
+        width: 101
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +427,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_10
       rect:
         serializedVersion: 2
-        x: 979
-        y: 519
-        width: 97
-        height: 103
+        x: 989
+        y: 524
+        width: 101
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,10 +448,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_11
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 519
-        width: 97
-        height: 103
+        x: 1102
+        y: 524
+        width: 101
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +469,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_12
       rect:
         serializedVersion: 2
-        x: 96
+        x: 72
         y: 406
-        width: 211
-        height: 102
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,10 +490,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_13
       rect:
         serializedVersion: 2
-        x: 318
+        x: 303
         y: 406
-        width: 211
-        height: 102
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,10 +511,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_14
       rect:
         serializedVersion: 2
-        x: 540
-        y: 405
-        width: 319
-        height: 103
+        x: 534
+        y: 406
+        width: 331
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,10 +532,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_15
       rect:
         serializedVersion: 2
-        x: 871
+        x: 877
         y: 406
-        width: 96
-        height: 102
+        width: 100
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,10 +553,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_16
       rect:
         serializedVersion: 2
-        x: 979
+        x: 989
         y: 406
-        width: 97
-        height: 102
+        width: 101
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +574,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_17
       rect:
         serializedVersion: 2
-        x: 1087
+        x: 1102
         y: 406
-        width: 97
-        height: 102
+        width: 101
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,10 +595,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 292
-        width: 211
-        height: 102
+        x: 72
+        y: 287
+        width: 219
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,10 +616,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_19
       rect:
         serializedVersion: 2
-        x: 318
-        y: 292
-        width: 211
-        height: 102
+        x: 303
+        y: 288
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,10 +637,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_20
       rect:
         serializedVersion: 2
-        x: 540
-        y: 292
-        width: 319
-        height: 102
+        x: 534
+        y: 287
+        width: 331
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,10 +658,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_21
       rect:
         serializedVersion: 2
-        x: 871
-        y: 292
-        width: 96
-        height: 102
+        x: 877
+        y: 287
+        width: 100
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,10 +679,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_22
       rect:
         serializedVersion: 2
-        x: 979
-        y: 292
-        width: 97
-        height: 102
+        x: 989
+        y: 287
+        width: 101
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,10 +700,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_23
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 292
-        width: 97
-        height: 102
+        x: 1102
+        y: 287
+        width: 100
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,10 +721,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_24
       rect:
         serializedVersion: 2
-        x: 96
-        y: 178
-        width: 211
-        height: 102
+        x: 72
+        y: 169
+        width: 219
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -715,10 +742,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_25
       rect:
         serializedVersion: 2
-        x: 318
-        y: 178
-        width: 211
-        height: 102
+        x: 303
+        y: 169
+        width: 219
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,10 +763,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_26
       rect:
         serializedVersion: 2
-        x: 540
-        y: 178
-        width: 319
-        height: 102
+        x: 534
+        y: 169
+        width: 331
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,10 +784,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_27
       rect:
         serializedVersion: 2
-        x: 871
-        y: 195
-        width: 96
-        height: 85
+        x: 877
+        y: 169
+        width: 331
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,10 +805,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_28
       rect:
         serializedVersion: 2
-        x: 979
-        y: 195
-        width: 97
-        height: 85
+        x: 72
+        y: 51
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -799,10 +826,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_29
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 211
-        height: 102
+        x: 303
+        y: 51
+        width: 219
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -820,10 +847,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_30
       rect:
         serializedVersion: 2
-        x: 318
-        y: 64
-        width: 211
-        height: 102
+        x: 534
+        y: 51
+        width: 331
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,10 +868,10 @@ TextureImporter:
       name: Fix Button Asset Pixel Art Game_31
       rect:
         serializedVersion: 2
-        x: 540
-        y: 64
-        width: 319
-        height: 102
+        x: 877
+        y: 68
+        width: 101
+        height: 89
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,10 +885,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Fix Button Asset Pixel Art Game_32
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 68
+        width: 101
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9811e3b5d18e98b80800000000000000
+      internalID: -8391921217845718647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: dfac35d2c3868cb4e95435add198e398
     internalID: 0
     vertices: []
     indices: 

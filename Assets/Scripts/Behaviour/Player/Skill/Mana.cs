@@ -62,16 +62,30 @@ public class Mana : MonoBehaviour
         mana.value = mana.value + value > mana.maxValue ? mana.maxValue : mana.value + value;
     }
 
-    public void Decrease(int value)
+    public bool Decrease(int value)
     {
         if(mana.value - value > 0)
         {
             mana.value -= value;
+            return true;
         }
         else
         {
             //show not enough mana;
             Debug.Log("Not enough mana");
+            return false;
+        }
+    }
+
+    public bool DecreaseCheck(int value)
+    {
+        if (mana.value - value > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }

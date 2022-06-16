@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class InventorySystem : MonoBehaviour
 {
@@ -22,6 +24,7 @@ public class InventorySystem : MonoBehaviour
     public Image description_Image;
     public Text description_Title;
     public Text description_Text;
+    public Text gold_text;
 
     private void Awake()
     {
@@ -38,6 +41,7 @@ public class InventorySystem : MonoBehaviour
         {
             ToggleInventory();
         }
+        gold_text.text = GameManager.instance.coinScriptable.value.ToString();
     }
 
     void ToggleInventory()
@@ -51,14 +55,8 @@ public class InventorySystem : MonoBehaviour
     //Add the item to the items list
     public void PickUp(GameObject item)
     {
-        if(items.Count >= itemMax){
-            Debug.Log("Inventory Full");
-        }
-        else
-        {
-            items.Add(item);
-            Update_UI();
-        }
+        items.Add(item);
+        Update_UI();
     }
 
     //Refresh the UI elements in the inventory window    
@@ -105,7 +103,7 @@ public class InventorySystem : MonoBehaviour
 
     public void Consume(int id)
     {
-        if(items[id].GetComponent<Item>().type== Item.ItemType.Consumables)
+        if (items[id].GetComponent<Item>().type== Item.ItemType.Consumables)
         {
             Debug.Log($"CONSUMED {items[id].name}");
             //Invoke the cunsume custome event
@@ -116,6 +114,28 @@ public class InventorySystem : MonoBehaviour
             items.RemoveAt(id);
             //Update UI
             Update_UI();
+        }
+    }
+
+    public void DropItemToGround(int id)
+    {
+        items[id].transform.position = transform.position;
+        items[id].SetActive(true);
+        SceneManager.MoveGameObjectToScene(items[id], SceneManager.GetActiveScene());
+        //Clear the item from the list
+        items.RemoveAt(id);
+        //Update UI
+        Update_UI();
+    }
+
+    public void ClearInventoryOnNextLevel()
+    {
+        int index = 0;
+        int loop = items.Count;
+        for(int i=0; i<loop;i++)
+        {
+            if (items[index].name == "Golden Key" || items[index].name == "Silver Key") DropItemToGround(index);
+            else index++;
         }
     }
 }

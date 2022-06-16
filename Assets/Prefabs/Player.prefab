@@ -50,6 +50,8 @@ GameObject:
   - component: {fileID: 1086501047642107410}
   - component: {fileID: 6394453450416113551}
   - component: {fileID: 6394453450416113544}
+  - component: {fileID: 1740880504470570240}
+  - component: {fileID: 5386650353502874306}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -66,7 +68,7 @@ Transform:
   m_GameObject: {fileID: 6394453450416113543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8, y: -2.9, z: -4.5168366}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 6069419205561091735}
   m_Father: {fileID: 0}
@@ -112,7 +114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
+  m_Sprite: {fileID: -2009132259794689466, guid: 1031348f9a8730741af131e1b0199a5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,8 +138,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: -0.005630493, y: 0.010083914}
+  m_Size: {x: 0.4481964, y: 1.281631}
   m_Direction: 0
 --- !u!50 &6394453450416113537
 Rigidbody2D:
@@ -151,7 +153,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -173,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundLayer: 6
-  speed: 5
+  speed: 3
   acceleration: 4
   decceleration: 9
   velPower: 1.2
@@ -186,11 +188,13 @@ MonoBehaviour:
   dashCooldown: 1
   dashDuration: 0.3
   dashForce: 20
-  runSpeed: 10
+  runSpeed: 8
   runKeyPressDelay: 0.5
   runChangeDirectionCompensation: 0.5
   horizontal: 0
   running: 0
+  isClimbing: 0
+  facingDirection: 0
 --- !u!114 &6394453450416113549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +211,33 @@ MonoBehaviour:
   lifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
   life: 0
   maxLife: 0
+  OnHitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6394453450416113550}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: HitAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5386650353502874306}
+        m_TargetAssemblyTypeName: InvincibleFrame, Assembly-CSharp
+        m_MethodName: activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnLifeReachZero:
     m_PersistentCalls:
       m_Calls:
@@ -234,6 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d6f9087bcfa574bb6791f8c967ec04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDeath: 0
 --- !u!114 &1086501047642107412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a176e2444476184ca9e7131087b454b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemMax: 6
   items: []
   isOpen: 0
   ui_Window: {fileID: 0}
@@ -298,6 +331,7 @@ MonoBehaviour:
   description_Image: {fileID: 0}
   description_Title: {fileID: 0}
   description_Text: {fileID: 0}
+  gold_text: {fileID: 0}
 --- !u!114 &6394453450416113551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,17 +364,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be84b6a72804f4408098d09d7a5ded3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentKhodam:
+  _normalAttack:
+    attackType: 0
+    manaCost: 0
+    damage: 10
+  _normalFireRate: 0.5
+  _currentSkill:
     attackType: 0
     manaCost: 0
     damage: 0
-  _khodamList:
-  - attackType: 1
-    manaCost: 15
-    damage: 15
-  - attackType: 2
-    manaCost: 25
-    damage: 20
-  - attackType: 3
-    manaCost: 40
-    damage: 35
+  _skillList: []
+  _animDelay: 0.3
+  _skillCooldown: 0.5
+--- !u!95 &1740880504470570240
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394453450416113543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1176f269c468b85478c1913a53967c49, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5386650353502874306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394453450416113543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3f09b60c5d7bb42b27f31c05e85972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2
+  timer: 0

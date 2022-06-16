@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PoolObjectType { DropLauncher, Coin, Potion, SilverKey, GoldenKey}
+public enum PoolObjectType { DropLauncher, Coin, Potion, SilverKey, GoldenKey, SkillObject, DamageText}
 public class PoolObject : MonoBehaviour
 {
     public PoolObjectType type;
     public bool deactiveOnStart = true;
     void Awake()
     {
-        deactivate();
+        if(deactiveOnStart)deactivate();
     }
 
     public void activate(Vector3 position, Quaternion rotation)

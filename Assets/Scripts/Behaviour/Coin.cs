@@ -8,7 +8,6 @@ public class Coin : MonoBehaviour
     Transform player;
     Rigidbody2D rb;
     bool followingPlayer;
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,6 +34,7 @@ public class Coin : MonoBehaviour
             player = collision.transform;
             followingPlayer = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         else if (collision.gameObject.tag == "Player" && followingPlayer)
         {
@@ -42,6 +42,17 @@ public class Coin : MonoBehaviour
             gameObject.SetActive(false);
         }
         
+    }
+
+    public void SetDelayPick()
+    {
+        gameObject.GetComponent<BoxCollider2D>().enabled = false;
+        Invoke("DelayPick", 2f);
+    }
+
+    void DelayPick()
+    {
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 
 }

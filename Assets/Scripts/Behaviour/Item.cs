@@ -30,9 +30,19 @@ public class Item : MonoBehaviour
         {
             case InteractionType.PickUp:
                 //Add the object to the PickedUpItems list
-                FindObjectOfType<InventorySystem>().PickUp(gameObject);
-                //Disable
-                gameObject.SetActive(false);
+                //Check whether the inventory is full
+                if(FindObjectOfType<InventorySystem>().items.Count == FindObjectOfType<InventorySystem>().itemMax)
+                {
+                    //Shows inventory full text
+                    Debug.Log("Inventory full!!");
+                }
+                else
+                {
+                    FindObjectOfType<InventorySystem>().PickUp(gameObject);
+                    //Disable
+                    gameObject.SetActive(false);
+                    DontDestroyOnLoad(gameObject);
+                }
                 break;
             case InteractionType.Examine:
                 //Call the Examine item in the interaction system
@@ -53,4 +63,5 @@ public class Item : MonoBehaviour
         //Invoke (call) the custom event(s)
         customEvent.Invoke();
     }
+
 }

@@ -1,0 +1,2028 @@
+fileFormatVersion: 2
+guid: 6ddef7dbb2d658a46b38bb9dd26b1dbd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4989212864192660411
+    second: Fix Environment Asset Pixel Lex_0
+  - first:
+      213: -2401935303332288222
+    second: Fix Environment Asset Pixel Lex_1
+  - first:
+      213: 3410628545290641986
+    second: Fix Environment Asset Pixel Lex_2
+  - first:
+      213: 1262983074862901442
+    second: Fix Environment Asset Pixel Lex_4
+  - first:
+      213: 7329794678747733562
+    second: Fix Environment Asset Pixel Lex_5
+  - first:
+      213: -7919597359273816496
+    second: Fix Environment Asset Pixel Lex_6
+  - first:
+      213: -39046698933757883
+    second: Fix Environment Asset Pixel Lex_7
+  - first:
+      213: -6680364129291127165
+    second: Fix Environment Asset Pixel Lex_8
+  - first:
+      213: 8422898116432139036
+    second: Fix Environment Asset Pixel Lex_9
+  - first:
+      213: -7025525197587567154
+    second: Fix Environment Asset Pixel Lex_10
+  - first:
+      213: -143432800658327614
+    second: Fix Environment Asset Pixel Lex_11
+  - first:
+      213: 8023972012316231609
+    second: Fix Environment Asset Pixel Lex_12
+  - first:
+      213: -598614779802496567
+    second: Fix Environment Asset Pixel Lex_13
+  - first:
+      213: -1120009024961431775
+    second: Fix Environment Asset Pixel Lex_14
+  - first:
+      213: -913462229914293668
+    second: Fix Environment Asset Pixel Lex_15
+  - first:
+      213: 5260523939380127974
+    second: Fix Environment Asset Pixel Lex_16
+  - first:
+      213: 1969906829175470012
+    second: Fix Environment Asset Pixel Lex_18
+  - first:
+      213: -5875832904514797320
+    second: Fix Environment Asset Pixel Lex_19
+  - first:
+      213: -2937545337890659675
+    second: Fix Environment Asset Pixel Lex_20
+  - first:
+      213: 2534502154721357403
+    second: Fix Environment Asset Pixel Lex_21
+  - first:
+      213: 4489688522374407111
+    second: Fix Environment Asset Pixel Lex_22
+  - first:
+      213: 109270562245652748
+    second: Fix Environment Asset Pixel Lex_23
+  - first:
+      213: -5006407978270111172
+    second: Fix Environment Asset Pixel Lex_24
+  - first:
+      213: 3077209963850015993
+    second: Fix Environment Asset Pixel Lex_25
+  - first:
+      213: 7184099331607989934
+    second: Fix Environment Asset Pixel Lex_26
+  - first:
+      213: 8105503405093365649
+    second: Fix Environment Asset Pixel Lex_27
+  - first:
+      213: 1792398218421553350
+    second: Fix Environment Asset Pixel Lex_28
+  - first:
+      213: -4023994061407692938
+    second: Fix Environment Asset Pixel Lex_29
+  - first:
+      213: -4424874334154609113
+    second: Fix Environment Asset Pixel Lex_30
+  - first:
+      213: 9004453983180011883
+    second: Fix Environment Asset Pixel Lex_31
+  - first:
+      213: -1040529959280716106
+    second: Fix Environment Asset Pixel Lex_32
+  - first:
+      213: -904627001832493900
+    second: Fix Environment Asset Pixel Lex_33
+  - first:
+      213: 5285214401765930042
+    second: Fix Environment Asset Pixel Lex_34
+  - first:
+      213: -8151196337998956129
+    second: Fix Environment Asset Pixel Lex_35
+  - first:
+      213: 2488022730494058796
+    second: Fix Environment Asset Pixel Lex_36
+  - first:
+      213: 3115658090104729578
+    second: Fix Environment Asset Pixel Lex_37
+  - first:
+      213: -4972686567108343510
+    second: Fix Environment Asset Pixel Lex_38
+  - first:
+      213: 1103559917227891266
+    second: Fix Environment Asset Pixel Lex_39
+  - first:
+      213: -1676908554073694854
+    second: Fix Environment Asset Pixel Lex_40
+  - first:
+      213: -4296404857892938965
+    second: Fix Environment Asset Pixel Lex_41
+  - first:
+      213: -3273017454100585016
+    second: Fix Environment Asset Pixel Lex_42
+  - first:
+      213: 2940139417508447858
+    second: Fix Environment Asset Pixel Lex_43
+  - first:
+      213: 3375234493637184066
+    second: Fix Environment Asset Pixel Lex_44
+  - first:
+      213: -5080894127064577406
+    second: Fix Environment Asset Pixel Lex_45
+  - first:
+      213: 8572031593271513216
+    second: Fix Environment Asset Pixel Lex_46
+  - first:
+      213: -3073411788204333886
+    second: Fix Environment Asset Pixel Lex_47
+  - first:
+      213: 2680234864953612213
+    second: Fix Environment Asset Pixel Lex_48
+  - first:
+      213: 2385258862537462757
+    second: Fix Environment Asset Pixel Lex_49
+  - first:
+      213: 8074230931557788957
+    second: Fix Environment Asset Pixel Lex_52
+  - first:
+      213: 5154819488666337807
+    second: Fix Environment Asset Pixel Lex_53
+  - first:
+      213: -110485566204648547
+    second: Fix Environment Asset Pixel Lex_54
+  - first:
+      213: -3338090357866651206
+    second: Fix Environment Asset Pixel Lex_55
+  - first:
+      213: 3446264723657270197
+    second: Fix Environment Asset Pixel Lex_56
+  - first:
+      213: -1998883764961763434
+    second: Fix Environment Asset Pixel Lex_58
+  - first:
+      213: 7831844395850070466
+    second: Fix Environment Asset Pixel Lex_61
+  - first:
+      213: 1302671494443605466
+    second: Fix Environment Asset Pixel Lex_62
+  - first:
+      213: 3819717494212622302
+    second: Fix Environment Asset Pixel Lex_63
+  - first:
+      213: 1962668261363523187
+    second: Fix Environment Asset Pixel Lex_64
+  - first:
+      213: 422833803195240400
+    second: Fix Environment Asset Pixel Lex_65
+  - first:
+      213: 8587478851403655439
+    second: Fix Environment Asset Pixel Lex_67
+  - first:
+      213: 9107074524149901923
+    second: Fix Environment Asset Pixel Lex_68
+  - first:
+      213: -3354429812216095038
+    second: Fix Environment Asset Pixel Lex_69
+  - first:
+      213: 9175676944085559306
+    second: Fix Environment Asset Pixel Lex_70
+  - first:
+      213: -1742532885191777623
+    second: Fix Environment Asset Pixel Lex_71
+  - first:
+      213: 1339819876213520647
+    second: Fix Environment Asset Pixel Lex_72
+  - first:
+      213: 601820602972014267
+    second: Fix Environment Asset Pixel Lex_73
+  - first:
+      213: -5197654332496500240
+    second: Fix Environment Asset Pixel Lex_74
+  - first:
+      213: -3653613697677236849
+    second: Fix Environment Asset Pixel Lex_75
+  - first:
+      213: -297847976778389309
+    second: Fix Environment Asset Pixel Lex_76
+  - first:
+      213: -373131163735790360
+    second: Fix Environment Asset Pixel Lex_77
+  - first:
+      213: -50427790032242311
+    second: Fix Environment Asset Pixel Lex_78
+  - first:
+      213: 4875737874143780804
+    second: Fix Environment Asset Pixel Lex_79
+  - first:
+      213: -6530153301443182820
+    second: Fix Environment Asset Pixel Lex_80
+  - first:
+      213: 5614784218510188387
+    second: Fix Environment Asset Pixel Lex_81
+  - first:
+      213: -191838603130753907
+    second: Fix Environment Asset Pixel Lex_83
+  - first:
+      213: 335553795935361599
+    second: Fix Environment Asset Pixel Lex_84
+  - first:
+      213: -5440913762378773198
+    second: Fix Environment Asset Pixel Lex_85
+  - first:
+      213: 2543683212053200803
+    second: Fix Environment Asset Pixel Lex_86
+  - first:
+      213: -2368938657248216522
+    second: Fix Environment Asset Pixel Lex_87
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 455
+        width: 199
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cbcf08551c2cab0800000000000000
+      internalID: -4989212864192660411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_1
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 455
+        width: 357
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229a86f419c9aaed0800000000000000
+      internalID: -2401935303332288222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_2
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 720
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2422bd6779cf45f20800000000000000
+      internalID: 3410628545290641986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_4
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 720
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8a88e3a64078110800000000000000
+      internalID: 1262983074862901442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 741
+        width: 12
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e9e47ec69a8b560800000000000000
+      internalID: 7329794678747733562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_6
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 741
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ecc5c5920f71290800000000000000
+      internalID: -7919597359273816496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_7
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 741
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548d664fb37457ff0800000000000000
+      internalID: -39046698933757883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_8
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 741
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386375fe7349a43a0800000000000000
+      internalID: -6680364129291127165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_9
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 741
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c139e31e53524e470800000000000000
+      internalID: 8422898116432139036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_10
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 741
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdac3d3e02508e90800000000000000
+      internalID: -7025525197587567154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_11
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 741
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7fe93b0ac620ef0800000000000000
+      internalID: -143432800658327614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_12
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 745
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b709c94800ea5f60800000000000000
+      internalID: 8023972012316231609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_13
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 745
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1d294870b41b7f0800000000000000
+      internalID: -598614779802496567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_14
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 745
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12731f1d9bde470f0800000000000000
+      internalID: -1120009024961431775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_15
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 745
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ae83e01fab253f0800000000000000
+      internalID: -913462229914293668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_16
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 745
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8e033c6a2210940800000000000000
+      internalID: 5260523939380127974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_18
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 663
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7be99f2d3865b10800000000000000
+      internalID: 1969906829175470012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_19
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 663
+        width: 89
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f008d6da19d47ea0800000000000000
+      internalID: -5875832904514797320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_20
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 663
+        width: 89
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a22c67341ebb37d0800000000000000
+      internalID: -2937545337890659675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_21
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 638
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee0a6084c5c2320800000000000000
+      internalID: 2534502154721357403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_22
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 638
+        width: 71
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c366487ce39e4e30800000000000000
+      internalID: 4489688522374407111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_23
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 678
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c013f075ff4348100800000000000000
+      internalID: 109270562245652748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_24
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 663
+        width: 85
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a4786087aa58ab0800000000000000
+      internalID: -5006407978270111172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_25
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 547
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4a29a882274ba20800000000000000
+      internalID: 3077209963850015993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_26
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 537
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae8d93774c03b360800000000000000
+      internalID: 7184099331607989934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_27
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 533
+        width: 87
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1972f42f6688c7070800000000000000
+      internalID: 8105503405093365649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_28
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 595
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c84f01eea0efd810800000000000000
+      internalID: 1792398218421553350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_29
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 581
+        width: 85
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677538f98b6e728c0800000000000000
+      internalID: -4023994061407692938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_30
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 581
+        width: 87
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ea8f0bc30b792c0800000000000000
+      internalID: -4424874334154609113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_31
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 581
+        width: 89
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69bbc7a03f36fc70800000000000000
+      internalID: 9004453983180011883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_32
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 581
+        width: 89
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6dbe6d38b4f81f0800000000000000
+      internalID: -1040529959280716106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_33
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 523
+        width: 80
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc2c85e88e1273f0800000000000000
+      internalID: -904627001832493900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_34
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 496
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3479030f7ad85940800000000000000
+      internalID: 5285214401765930042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_35
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 496
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f997b131e1221ee80800000000000000
+      internalID: -8151196337998956129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_36
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 489
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c212234cd7b378220800000000000000
+      internalID: 2488022730494058796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_37
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 489
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefa346868a0d3b20800000000000000
+      internalID: 3115658090104729578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_38
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 489
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a298624e9e77dfab0800000000000000
+      internalID: -4972686567108343510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_39
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 457
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a5ab6d5e1a05f00800000000000000
+      internalID: 1103559917227891266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_40
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 455
+        width: 76
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d9f910e8c6ab8e0800000000000000
+      internalID: -1676908554073694854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_41
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 466
+        width: 39
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b570a8b8a1064c0800000000000000
+      internalID: -4296404857892938965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_42
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 466
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c56ea877f7e392d0800000000000000
+      internalID: -3273017454100585016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_43
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 423
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27607b209397dc820800000000000000
+      internalID: 2940139417508447858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_44
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 423
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ac3e2a3ed37de20800000000000000
+      internalID: 3375234493637184066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_45
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 417
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a82fe06b90d79b0800000000000000
+      internalID: -5080894127064577406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_46
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 417
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080df584159f5f670800000000000000
+      internalID: 8572031593271513216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_47
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 417
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c42593234c0955d0800000000000000
+      internalID: -3073411788204333886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 151
+        width: 297
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b75d20c86b123520800000000000000
+      internalID: 2680234864953612213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_49
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 149
+        width: 247
+        height: 301
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3d5ee3c442a1120800000000000000
+      internalID: 2385258862537462757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_52
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d29fdc04e6d0070800000000000000
+      internalID: 8074230931557788957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_53
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02c7377309998740800000000000000
+      internalID: 5154819488666337807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_54
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93609186f9777ef0800000000000000
+      internalID: -110485566204648547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_55
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1a3376188bca1d0800000000000000
+      internalID: -3338090357866651206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_56
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b32d8fc18793df20800000000000000
+      internalID: 3446264723657270197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_58
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f982a6ec98244e0800000000000000
+      internalID: -1998883764961763434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_61
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9f6ceabfc40bc60800000000000000
+      internalID: 7831844395850070466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_62
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add965582d4041210800000000000000
+      internalID: 1302671494443605466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_63
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed773e0c2dc520530800000000000000
+      internalID: 3819717494212622302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_64
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e9182926ccc3b10800000000000000
+      internalID: 1962668261363523187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_65
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 325
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfca7e8a153ed500800000000000000
+      internalID: 422833803195240400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_67
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f092816548adc2770800000000000000
+      internalID: 8587478851403655439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_68
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ae6f24704d26e70800000000000000
+      internalID: 9107074524149901923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_69
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce11eabbdba271d0800000000000000
+      internalID: -3354429812216095038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_70
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0826f9d09d865f70800000000000000
+      internalID: 9175676944085559306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_71
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a225b0c29741d7e0800000000000000
+      internalID: -1742532885191777623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_72
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 230
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709f6b8241ff79210800000000000000
+      internalID: 1339819876213520647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_73
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb688aa56a81a5800800000000000000
+      internalID: 601820602972014267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_74
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9a6464ce83ed7b0800000000000000
+      internalID: -5197654332496500240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_75
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 229
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85627b13b1cb4dc0800000000000000
+      internalID: -3653613697677236849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_76
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c82e0bd7d4dddbf0800000000000000
+      internalID: -297847976778389309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_77
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec66eafe2f52daf0800000000000000
+      internalID: -373131163735790360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_78
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 30
+        width: 68
+        height: 68
+      alignment: 9
+      pivot: {x: 0.54168296, y: 0.61222357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979f1503138dc4ff0800000000000000
+      internalID: -50427790032242311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_79
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf124683c91aa340800000000000000
+      internalID: 4875737874143780804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_80
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f72aaab2c3065a0800000000000000
+      internalID: -6530153301443182820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_81
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 30
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fd4c29f78bbed40800000000000000
+      internalID: 5614784218510188387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_83
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 28
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c2f2e8ec3765df0800000000000000
+      internalID: -191838603130753907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_84
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 28
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ad2c9466028a400800000000000000
+      internalID: 335553795935361599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_85
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 28
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d01e3a2cdfd74b0800000000000000
+      internalID: -5440913762378773198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_86
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 28
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af3e83876afc4320800000000000000
+      internalID: 2543683212053200803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Environment Asset Pixel Lex_87
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 28
+        width: 108
+        height: 176
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a7708a7d6df1fd0800000000000000
+      internalID: -2368938657248216522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3d06088220d1adc4096fa40de84ef255
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
