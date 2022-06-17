@@ -76,9 +76,9 @@ public class Skills : MonoBehaviour
                 else ObjectPool.instance.requestObject(PoolObjectType.SkillObject).gameObject.GetComponent<SkillObject>().setNormal(_normalAttack, new Vector2(transform.position.x - 1f, transform.position.y), PlayerMovement.instance.facingDirection);
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1) && _skillList.Count > 0) _currentSkill = _skillList[0];
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && _skillList.Count > 1) _currentSkill = _skillList[1];
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && _skillList.Count > 2) _currentSkill = _skillList[2];
+        if (Input.GetKeyDown(KeyCode.Alpha1) && _skillList[0].attackType != AttackType.NORMAL) _currentSkill = _skillList[0];
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && _skillList[1].attackType != AttackType.NORMAL) _currentSkill = _skillList[1];
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && _skillList[2].attackType != AttackType.NORMAL) _currentSkill = _skillList[2];
     }
 
     void SkillDelay()
@@ -90,7 +90,18 @@ public class Skills : MonoBehaviour
 
     public void AddSkill(SkillList skill)
     {
-        _skillList.Add(skill);
+        switch (skill.attackType)
+        {
+            case AttackType.SKILL1:
+                _skillList[0] = skill;
+                break;
+            case AttackType.SKILL2:
+                _skillList[1] = skill;
+                break;
+            case AttackType.SKILL3:
+                _skillList[2] = skill;
+                break;
+        }
         _currentSkill = skill;
     }
 

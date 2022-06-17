@@ -4133,7 +4133,7 @@ MonoBehaviour:
   getKey: {fileID: 8300000, guid: d2c2f677a678f2249a08c0e6567ba75b, type: 3}
   deathSound: {fileID: 8300000, guid: 88e6f371dc4be424ba9b2c8a5b7f348e, type: 3}
   enemyHit: {fileID: 0}
-  openChest: {fileID: 8300000, guid: 4a4ab785e42dce04f9e1ab8d58808d53, type: 3}
+  openChest: {fileID: 8300000, guid: 08cceebbf581ec841b9a9e82ba7d69a5, type: 3}
   clickButton: {fileID: 8300000, guid: 97a52ed9c9afaca409ee496a4ecb1a46, type: 3}
   clickPause: {fileID: 8300000, guid: 93fb70c4e2d48bd40b5b988dcb78088d, type: 3}
   buySkill: {fileID: 8300000, guid: faed46580e5cc6e4d9e89a279e625fcb, type: 3}

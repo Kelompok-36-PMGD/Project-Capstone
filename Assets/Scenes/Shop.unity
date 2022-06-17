@@ -2242,7 +2242,7 @@ MonoBehaviour:
       damage: 15
   - skillImage: {fileID: 8053744320392656734, guid: 06845e8f14c76b544aae1cf3a169799b, type: 3}
     skillName: Raungan Maung Bodas
-    price: 300
+    price: 150
     description: Materialize Small Bodas to the world and strikes the enemy.
     skill:
       attackType: 2

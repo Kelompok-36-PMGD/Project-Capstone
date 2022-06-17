@@ -49,6 +49,9 @@ public class UIManager : MonoBehaviour
     public void GoToMainMenu()
     {
         Time.timeScale = 1;
+        GameManager.instance.lifeScriptable.resetDefault();
+        GameManager.instance.coinScriptable.resetDefault();
+        GameManager.instance.manaScriptable.resetDefault();
         Destroy(GameManager.instance.gameObject);
         PlayerSound.instance.ClickButtonSound();
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);

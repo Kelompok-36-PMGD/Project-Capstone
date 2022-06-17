@@ -133,7 +133,18 @@ public class Shop : MonoBehaviour
     public void UnlockButton()
     {
         PlayerSound.instance.BuySkillSound();
-        skills.Add(selectedSkill);
+        switch (selectedSkill.attackType)
+        {
+            case AttackType.SKILL1:
+                skills[0] = selectedSkill;
+                break;
+            case AttackType.SKILL2:
+                skills[1] = selectedSkill;
+                break;
+            case AttackType.SKILL3:
+                skills[2] = selectedSkill;
+                break;
+        }
         unlockButton.GetComponent<Button>().interactable = false;
         GameManager.instance.coinScriptable.value -= currentPrice;
         coinText.text = GameManager.instance.coinScriptable.value.ToString();

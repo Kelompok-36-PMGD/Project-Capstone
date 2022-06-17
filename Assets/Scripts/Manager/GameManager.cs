@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         //TESTING
-        if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
+        //if (Input.GetKeyDown(KeyCode.P)) ToShopScene();
         /*if (Input.GetKeyUp(KeyCode.R) && !inShop)
         {
             SceneManager.LoadScene(currentScene);

@@ -17224,7 +17224,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinScriptable: {fileID: 11400000, guid: ba5aecbfb0c1aca41810039a9a274410, type: 2}
-  skillList: []
+  skillList:
+  - attackType: 0
+    manaCost: 0
+    damage: 0
+  - attackType: 0
+    manaCost: 0
+    damage: 0
+  - attackType: 0
+    manaCost: 0
+    damage: 0
   lifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
   manaScriptable: {fileID: 11400000, guid: 982f1b12c1f2ca04d9fbd8ab1e04c712, type: 2}
   inventoryItems: []
@@ -89980,8 +89989,48 @@ PrefabInstance:
       value: 99999
       objectReference: {fileID: 0}
     - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1096736591}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopMoving
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StopMoving
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Patrol, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Patrol, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
       propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 917155905205136541, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
+      propertyPath: OnHitEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4578086482710721458, guid: 447267a6397b85b43b5e5ad608a8db40, type: 3}
       propertyPath: m_Enabled
@@ -130115,6 +130164,14 @@ PrefabInstance:
     - target: {fileID: 7256802093431132067, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
       propertyPath: m_Value
       value: 0.327
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054224321900621762, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 48.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054224321900621762, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -76.79999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d115e20b475d5204eb1c6a22e840c0a0, type: 3}
