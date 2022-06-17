@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 088e21246cc835d43bfd53b0434a4592
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7799479448295298749
+    second: Fix Badas Pati Asset_17
+  - first:
+      213: 5514607215962858031
+    second: Fix Badas Pati Asset_18
+  - first:
+      213: 292729992422898814
+    second: Fix Badas Pati Asset_19
+  - first:
+      213: -2109217462084062943
+    second: Fix Badas Pati Asset_28
+  - first:
+      213: -7731966161653446328
+    second: Fix Badas Pati Asset_29
+  - first:
+      213: -1952130515876216270
+    second: Fix Badas Pati Asset_30
+  - first:
+      213: 4721237187663074735
+    second: Fix Badas Pati Asset_31
+  - first:
+      213: 4421918655484509749
+    second: Fix Badas Pati Asset_32
+  - first:
+      213: -3604374878895435562
+    second: Fix Badas Pati Asset_33
+  - first:
+      213: -1589858780829380906
+    second: Fix Badas Pati Asset_54
+  - first:
+      213: -7353035801000937839
+    second: Fix Badas Pati Asset_55
+  - first:
+      213: 2957827341297534254
+    second: Fix Badas Pati Asset_56
+  - first:
+      213: 2816542217520229994
+    second: Fix Badas Pati Asset_57
+  - first:
+      213: 1033726077941930254
+    second: Fix Badas Pati Asset_58
+  - first:
+      213: -581966627338722334
+    second: Fix Badas Pati Asset_59
+  - first:
+      213: -491136892509460732
+    second: Fix Badas Pati Asset_60
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_17
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 457
+        width: 156
+        height: 82
+      alignment: 9
+      pivot: {x: 0.41068992, y: 0.457524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3492663e3cea2c390800000000000000
+      internalID: -7799479448295298749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_18
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 457
+        width: 164
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22a5479b02d78c40800000000000000
+      internalID: 5514607215962858031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 457
+        width: 165
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c387d806cff0400800000000000000
+      internalID: 292729992422898814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_28
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 303
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121bd62b4ed8ab2e0800000000000000
+      internalID: -2109217462084062943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_29
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 303
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8494e4fddb982b490800000000000000
+      internalID: -7731966161653446328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_30
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 303
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2328ffd73a3a8e4e0800000000000000
+      internalID: -1952130515876216270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_31
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 279
+        width: 158
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5950f3534358140800000000000000
+      internalID: 4721237187663074735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_32
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 279
+        width: 162
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53eb3ddb69fcd5d30800000000000000
+      internalID: 4421918655484509749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_33
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 279
+        width: 165
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d0981af420bafdc0800000000000000
+      internalID: -3604374878895435562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_54
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 100
+        width: 156
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de01adbcdfafe9e0800000000000000
+      internalID: -1589858780829380906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_55
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 100
+        width: 162
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196fb94a5e4c4f990800000000000000
+      internalID: -7353035801000937839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_56
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 101
+        width: 105
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e254af0bb405c0920800000000000000
+      internalID: 2957827341297534254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_57
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 101
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e2f22693e561720800000000000000
+      internalID: 2816542217520229994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_58
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 101
+        width: 55
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0959c61468885e00800000000000000
+      internalID: 1033726077941930254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_59
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 101
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3e7529f607ce7f0800000000000000
+      internalID: -581966627338722334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix Badas Pati Asset_60
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 101
+        width: 27
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40762e139912f29f0800000000000000
+      internalID: -491136892509460732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 722dc375be4a7a5468f645407876ac04
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 07a9b040b72a15846b9d559135a775d7, type: 3}
+      name: _Emission
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

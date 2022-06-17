@@ -4,13 +4,14 @@ using UnityEngine.Events;
 public class Life : MonoBehaviour
 {
     [SerializeField] bool useScriptable;
-    public int life;
     public Health lifeScriptable;
+    public int life;
     public int maxLife;
-    public Health maxLifeScriptable;
-    
 
+    public UnityEvent OnHitEvent;
     public UnityEvent OnLifeReachZero;
+
+    bool isDeath = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,23 +24,31 @@ public class Life : MonoBehaviour
         
     }
 
+    //For enemydamage, from the Enemy OBJECT get the EnemyController then call the TakeDamage(AttackType type) function instead.
     public void OnHit(int amount)
     {
-        if (useScriptable)
+        if (!isDeath)
         {
-            lifeScriptable.value = lifeScriptable.value - amount < 0 ? 0 : lifeScriptable.value - amount;
-
-            if(lifeScriptable.value <= 0)
+            if (useScriptable)
             {
-                OnLifeReachZero?.Invoke();
+                lifeScriptable.value = lifeScriptable.value - amount < 0 ? 0 : lifeScriptable.value - amount;
+                OnHitEvent?.Invoke();
+                if (lifeScriptable.value <= 0)
+                {
+                    OnLifeReachZero?.Invoke();
+                    isDeath = true;
+                }
             }
-        }
-        else
-        {
-            life = life - amount < 0 ? 0 : life - amount;
-            if(life <= 0)
+            else
             {
-                OnLifeReachZero?.Invoke();
+                life = life - amount < 0 ? 0 : life - amount;
+                OnHitEvent?.Invoke();
+                if (life <= 0)
+                {
+                    OnLifeReachZero?.Invoke();
+                    isDeath = true;
+                }
+
             }
         }
     }
@@ -49,7 +58,7 @@ public class Life : MonoBehaviour
         //GameManager.GetInstance().lifeMusic.Play();
         if (useScriptable)
         {
-            lifeScriptable.value = lifeScriptable.value + amount > maxLifeScriptable.value ? maxLifeScriptable.value : lifeScriptable.value + amount;
+            lifeScriptable.value = lifeScriptable.value + amount > lifeScriptable.maxValue ? lifeScriptable.maxValue : lifeScriptable.value + amount;
 
         }
         else
@@ -59,5 +68,15 @@ public class Life : MonoBehaviour
         }
     }
 
+    //player only scripts =================================
+    public void IncreaseMax(int amount)
+    {
+        lifeScriptable.maxValue += amount;
+    }
+
+    public void DecreaseMax(int amount)
+    {
+        lifeScriptable.maxValue -= amount;
+    }
     
 }

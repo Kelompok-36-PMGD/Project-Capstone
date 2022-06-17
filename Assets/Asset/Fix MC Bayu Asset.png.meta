@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: 1031348f9a8730741af131e1b0199a5c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4443978469671510296
+    second: Fix MC Bayu Asset_14
+  - first:
+      213: -1274136655374544806
+    second: Fix MC Bayu Asset_15
+  - first:
+      213: 1464355459685569755
+    second: Fix MC Bayu Asset_16
+  - first:
+      213: 4683770320563153342
+    second: Fix MC Bayu Asset_17
+  - first:
+      213: -5425224148221229237
+    second: Fix MC Bayu Asset_18
+  - first:
+      213: 2268205915647911782
+    second: Fix MC Bayu Asset_19
+  - first:
+      213: -2009132259794689466
+    second: Fix MC Bayu Asset_24
+  - first:
+      213: 1936295051964425639
+    second: Fix MC Bayu Asset_25
+  - first:
+      213: 8527527393777057815
+    second: Fix MC Bayu Asset_26
+  - first:
+      213: 8624429099820669671
+    second: Fix MC Bayu Asset_35
+  - first:
+      213: -7847443635175095647
+    second: Fix MC Bayu Asset_36
+  - first:
+      213: 267629700377153328
+    second: Fix MC Bayu Asset_37
+  - first:
+      213: -1348299590754140973
+    second: Fix MC Bayu Asset_38
+  - first:
+      213: 4844471887037053608
+    second: Fix MC Bayu Asset_39
+  - first:
+      213: 7414883698094623012
+    second: Fix MC Bayu Asset_40
+  - first:
+      213: -3346110014187297530
+    second: Fix MC Bayu Asset_49
+  - first:
+      213: -5444605205331168140
+    second: Fix MC Bayu Asset_50
+  - first:
+      213: -1744070510016349332
+    second: Fix MC Bayu Asset_51
+  - first:
+      213: 4532645670050357640
+    second: Fix MC Bayu Asset_59
+  - first:
+      213: 5130711465020814996
+    second: Fix MC Bayu Asset_60
+  - first:
+      213: -1679878128118375931
+    second: Fix MC Bayu Asset_61
+  - first:
+      213: 5175347528479912706
+    second: Fix MC Bayu Asset_62
+  - first:
+      213: 510140684860027067
+    second: Fix MC Bayu Asset_63
+  - first:
+      213: -5081871803667505535
+    second: Fix MC Bayu Asset_64
+  - first:
+      213: -4579400584075273231
+    second: Fix MC Bayu Asset_65
+  - first:
+      213: 4306703300672532542
+    second: Fix MC Bayu Asset_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_14
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811214a7fde2cad30800000000000000
+      internalID: 4443978469671510296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_15
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50981d667b515ee0800000000000000
+      internalID: -1274136655374544806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_16
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd45677388f625410800000000000000
+      internalID: 1464355459685569755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_17
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb92fa67a48100140800000000000000
+      internalID: 4683770320563153342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_18
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47076a916bb5b4b0800000000000000
+      internalID: -5425224148221229237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_19
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 464
+        width: 70
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66722a743494a7f10800000000000000
+      internalID: 2268205915647911782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_24
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 461
+        width: 62
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642e824cad02e14e0800000000000000
+      internalID: -2009132259794689466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_25
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 461
+        width: 62
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5afa0471a1fda10800000000000000
+      internalID: 1936295051964425639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_26
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 512
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7108e7edbfcd75670800000000000000
+      internalID: 8527527393777057815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 244
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea5a55729020b770800000000000000
+      internalID: 8624429099820669671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_36
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 244
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a20d726797481390800000000000000
+      internalID: -7847443635175095647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_37
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 251
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f03566bcfc6b300800000000000000
+      internalID: 267629700377153328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_38
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 256
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc7b427aa0e94de0800000000000000
+      internalID: -1348299590754140973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_39
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 244
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aab53f93850b3340800000000000000
+      internalID: 4844471887037053608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_40
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 244
+        width: 100
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429c3cb0075f6e660800000000000000
+      internalID: 7414883698094623012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_49
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 246
+        width: 70
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6052df8abaa3091d0800000000000000
+      internalID: -3346110014187297530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_50
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 246
+        width: 70
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4743ef99960e074b0800000000000000
+      internalID: -5444605205331168140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_51
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 246
+        width: 70
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bbd339c11dbc7e0800000000000000
+      internalID: -1744070510016349332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_59
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8816010d83137ee30800000000000000
+      internalID: 4532645670050357640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_60
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496f69dc4e2f33740800000000000000
+      internalID: 5130711465020814996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_61
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a5e8b2ebfdfa8e0800000000000000
+      internalID: -1679878128118375931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_62
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203bd30382782d740800000000000000
+      internalID: 5175347528479912706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_63
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb07e820042641700800000000000000
+      internalID: 510140684860027067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_64
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 53
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e135cf4809979b0800000000000000
+      internalID: -5081871803667505535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_65
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 51
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb1af57e63b270c0800000000000000
+      internalID: -4579400584075273231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fix MC Bayu Asset_66
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 51
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30b69585db74cb30800000000000000
+      internalID: 4306703300672532542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ce8410f83777e8442866f4bb6cc541a9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

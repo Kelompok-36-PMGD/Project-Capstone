@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ladder
+  - MovingPlatform
+  - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -15,9 +19,9 @@ TagManager:
   - Player
   - Enemy
   - EnemyTurnAround
-  - 
-  - 
-  - 
+  - Item
+  - Coin
+  - Projectile
   - 
   - 
   - 
@@ -38,6 +42,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: VeryBackground
+    uniqueID: 400103579
+    locked: 0
+  - name: Background
+    uniqueID: 2354055595
+    locked: 0
+  - name: BackgroundObject
+    uniqueID: 4091131799
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ItemDrop
+    uniqueID: 643025583
+    locked: 0
+  - name: UI
+    uniqueID: 421474883
     locked: 0

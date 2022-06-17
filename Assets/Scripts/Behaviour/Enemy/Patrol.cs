@@ -4,43 +4,59 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
-
-    public bool mustPatrol;
     private bool mustTurn;
 
     Rigidbody2D rb;
+    private Animator anim;
     public Transform[] turnAround;
-    public LayerMask turnAroundMask;
+    public LayerMask turnAroundMask = 9;
     Collider2D bodyCollider;
 
     [Header("Movement")]
-    [SerializeField] float speed = 10f;
+    [SerializeField] public float speed = 10f;
     //[SerializeField] float acceleration = 4f;
     //[SerializeField] float decceleration = 9f;
     //[SerializeField] float velPower = 1.2f;
     [SerializeField] float moveDelay = 0f;
+    [SerializeField] bool alwaysWalkAnim = false;
+    public int direction = 1;
 
     float currentSpeed;
-    bool checkingTurnAround = true;
+    [HideInInspector] public bool checkingTurnAround = true;
     bool reachedTurnAround;
-    bool isAttacking;
+    [HideInInspector] public bool isAttacking;
+    bool ignore;
     //private Animator anim;
 
     void Awake()
     {
-        mustPatrol = true;
         //anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         bodyCollider = GetComponent<Collider2D>();
+
+        if(alwaysWalkAnim) anim.SetBool("walk", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mustPatrol && checkingTurnAround)
+        if (checkingTurnAround)
         {
             if (Physics2D.Raycast(rb.position, Vector2.right, 0.5f, turnAroundMask) || bodyCollider.IsTouchingLayers(turnAroundMask))
             {
+                if (ignore)
+                {
+                    RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.right, 0.5f, turnAroundMask);
+                    if (hit)
+                    {
+                        hit.transform.gameObject.SetActive(false);
+                        hit.transform.gameObject.GetComponent<DelayEnable>().Delay(3f);
+                        ignore = false;
+                        return;
+                    }
+                    
+                }
                 reachedTurnAround = true;
                 checkingTurnAround = false;
                 if(moveDelay > 0)StartCoroutine("DelayFlip");
@@ -72,14 +88,16 @@ public class Patrol : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (mustPatrol && !isAttacking) Move();
+        if (!isAttacking) Move();
+        bool move = currentSpeed == 0 ? false : true;
+        if(!alwaysWalkAnim)anim.SetBool("walk", move);
     }
 
     void Move()
     {
         if (reachedTurnAround) currentSpeed = 0;
         else currentSpeed = speed;
-        rb.MovePosition(rb.position + new Vector2(1, 0) * (Time.fixedDeltaTime * currentSpeed));
+        rb.MovePosition(rb.position + new Vector2(1, 0) * (Time.fixedDeltaTime * currentSpeed * direction));
 
         /*float targetSpeed = currentSpeed;
         float speedDiff = targetSpeed - rb.velocity.x;
@@ -89,23 +107,50 @@ public class Patrol : MonoBehaviour
         rb.AddForce(movement * Vector2.right);*/
     }
 
-    void Flip()
+    public void Flip()
     {
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
-        speed *= -1;
+        direction *= -1;
     }
 
-    public void Attacking(float attackCooldown)
+    public void Attacking(float attackCooldown, float chargeTime)
     {
         isAttacking = true;
         currentSpeed = 0;
+        Invoke("DelayChargeAttack", chargeTime);
         Invoke("DelayAttack", attackCooldown);
     }
 
-    void DelayAttack()
+    void DelayChargeAttack()
+    {
+        anim.SetTrigger("attack");
+    }
+
+    public void DelayAttack()
     {
         currentSpeed = speed;
         isAttacking = false;
+    }
+
+    public void StopMoving()
+    {
+        currentSpeed = 0;
+        isAttacking = true;
+    }
+
+    public void CancelDelayIdleTOMove()
+    {
+        CancelInvoke("DelayAttack");
+    }
+
+    public void DelayIdleToMove(float time)
+    {
+        Invoke("DelayAttack", time);
+    }
+
+    public void IgnoreOneTurnAround()
+    {
+        ignore = true;
     }
 }
 

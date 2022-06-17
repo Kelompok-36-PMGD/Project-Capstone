@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
     Rigidbody2D rb;
+    Animator anim;
+    SpriteRenderer spriteRenderer;
     public int groundLayer;
     [Header("Movement")]
     [SerializeField] float speed = 10f;
@@ -30,34 +33,66 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dashDuration = 1f;
     [SerializeField] float dashForce = 10f;
 
+    [Header("Run")]
+    public float runSpeed = 10f;
+    public float runKeyPressDelay = 1f;
+    public float runChangeDirectionCompensation = 0.5f;
+
     float coyoteTime;
     float jumpEndEarlyTime;
     float jumpBufferTime;
     float dashCooldownTimer;
     float dashTimer;
 
+    bool falling;
     bool jumping;
     bool jumpButtonReleased;
     bool endedJumpEarly;
     bool doubleJump;
     bool isGrounded;
     bool doubleJumpIsValid;
+    float runChangeDirectionTimer;
+    bool isUsingSkill;
 
     [HideInInspector]public float horizontal;
+    [HideInInspector]public bool running;
+    [HideInInspector]public bool isClimbing = false;
     float direction; //Track the current direction the player headed
+    [HideInInspector] public int facingDirection;
 
     private void Awake()
     {
+        if (instance == null) instance = this;
+        else Destroy(gameObject);
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        facingDirection = 1;
     }
 
     private void Update()
     {
         isGrounded = checkGrounded();
-        //Get Input as float
 
+        //Animation
+        //Check landing
+        if (isGrounded) anim.SetBool("landing", true);
+
+        //Flip
+        if (rb.velocity.x > 0)
+        {
+            spriteRenderer.flipX = false;
+            facingDirection = 1;
+        }
+        else if (rb.velocity.x < 0)
+        {
+            spriteRenderer.flipX = true;
+            facingDirection = -1;
+        }
+
+        //Get Input as float
         //Tracking last face direction before dash
-        if(horizontal > 0 && dashTimer < 0f) //Player is facing right
+        if (horizontal > 0 && dashTimer < 0f) //Player is facing right
         {
             direction = 1f;
         }
@@ -66,6 +101,17 @@ public class PlayerMovement : MonoBehaviour
             direction = -1f;
         }
 
+        //run Stop
+        if (running && horizontal == 0f && runChangeDirectionTimer < 0f)
+        {
+            running = false;
+            runChangeDirectionTimer = runChangeDirectionCompensation;
+        }
+        else if (!running & horizontal != 0f && runChangeDirectionTimer > 0f)
+        {
+            running = true;
+            runChangeDirectionTimer = 0f; //reset
+        }
         //Time dependant variables
         if (isGrounded)
         {
@@ -77,8 +123,9 @@ public class PlayerMovement : MonoBehaviour
         jumpEndEarlyTime -= Time.deltaTime;
         dashTimer -= Time.deltaTime;
         dashCooldownTimer -= Time.deltaTime;
+        runChangeDirectionTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             jumpBufferTime = jumpBuffer;
             jumpButtonReleased = false;
@@ -98,15 +145,15 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Z))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             jumpButtonReleased = true;
         }
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashCooldownTimer <= 0)
+        /*if (Input.GetKeyDown(KeyCode.LeftShift) && dashCooldownTimer <= 0)
         {
             dashCooldownTimer = dashCooldown;
             dashTimer = dashDuration;
-        }
+        }*/
 
         //Jump Ended Early
         if (jumpButtonReleased && jumpEndEarlyTime <= 0f && rb.velocity.y > 0) endedJumpEarly = true;
@@ -120,6 +167,22 @@ public class PlayerMovement : MonoBehaviour
     {
         //Player movement physics
         float targetSpeed = horizontal * speed;
+        if (running)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", true);
+            targetSpeed = horizontal * runSpeed;
+        }
+        else if (horizontal == 0)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", false);
+        }
+        //Stop moving when using skill
+        if (isUsingSkill)
+        {
+            targetSpeed = 0;
+        }
         float speedDiff = targetSpeed - rb.velocity.x;
         float accelRate;
         //Apply air drag while midAir, false otherwise
@@ -128,13 +191,28 @@ public class PlayerMovement : MonoBehaviour
         float movement = Mathf.Pow(Mathf.Abs(speedDiff) * accelRate, velPower) * Mathf.Sign(speedDiff);
         rb.AddForce(movement * Vector2.right);
 
+        //Animation Falling
+        if (rb.velocity.y < 0 && !isClimbing) falling = true;
+        else falling = false;
+        anim.SetBool("fall", falling);
+
+        //Sound
+        if (running && isGrounded) PlayerSound.instance.PlayRun(true);
+        else PlayerSound.instance.PlayRun(false);
+        if (!running && isGrounded && horizontal != 0) PlayerSound.instance.PlayWalk(true);
+        else PlayerSound.instance.PlayWalk(false);
+
+
         //Jump if onKeyDown or has buffered jump(pressing jump while midAir)
-        if(jumping || hasBufferedJump || doubleJump)
+        if (jumping || hasBufferedJump || doubleJump)
         {
-            jumpBufferTime = 0f;
-            jumping = false;
-            doubleJump=false;
-            Jump();
+            if (!isUsingSkill)
+            {
+                jumpBufferTime = 0f;
+                jumping = false;
+                doubleJump = false;
+                Jump();
+            }
         }
         else if (hasBufferedDoubleJump && dashTimer < 0f)
         {
@@ -156,14 +234,32 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
+        PlayerSound.instance.JumpSound();
+        anim.SetTrigger("jump");
         jumpEndEarlyTime = jumpEndEarlyMinimal; //Reset the timer so that the player will jump at least until this value < 0
         rb.velocity = new Vector2(rb.velocity.x, 0f); //Reset the jump so that the added Force stay constant
         rb.AddForce(Vector2.up* jumpForce, ForceMode2D.Impulse);
     }
 
-    bool checkGrounded()
+    public bool checkGrounded()
     {
         int groundMask = 1 << groundLayer;
         return Physics2D.Raycast(rb.position, Vector2.down, transform.localScale.y + 0.01f, groundMask);
+    }
+
+    public void UseSkill()
+    {
+        isUsingSkill = true;
+        Invoke("SkillDelay", 0.6f);
+    }
+
+    void SkillDelay()
+    {
+        isUsingSkill = false;
+    }
+
+    public void ResetVelocity()
+    {
+        rb.velocity = new Vector2(0, 0);
     }
 }

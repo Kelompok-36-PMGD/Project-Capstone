@@ -6,23 +6,44 @@ using UnityEngine;
 public class Health : ScriptableObject
 {
     public int value;
+    public int initialValue;
     public int defaultValue;
     public int maxValue;
-    public bool resetOnEnable;
+    public int maxDefaultValue;
+    public bool resetDefaultOnEnable;
+    public bool resetInitialOnEnable;
 
 
     private void OnEnable()
     {
-        if (resetOnEnable)
+        if (resetDefaultOnEnable)
         {
-            reset();
+            resetDefault();
+            resetInitialToDefault();
         }
+        else if (resetInitialOnEnable) resetInitial();
     }
 
-    public void reset()
+    public void resetDefault()
     {
         value = defaultValue;
+        maxValue = maxDefaultValue;
     }
 
+    //Perfect for save/load system or checkpoint
+    public void resetInitial()
+    {
+        value = initialValue;
+    }
+
+    public void setInitialValue(int value)
+    {
+        initialValue = value;
+    }
+
+    public void resetInitialToDefault()
+    {
+        initialValue = defaultValue;
+    }
 
 }

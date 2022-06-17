@@ -6,6 +6,7 @@ public class AudioSetting : MonoBehaviour
 {
 	public AudioSource Audiosource;
 	private float musicVolume = 1f;
+	private float sfxVolume = 1f;
 
 	void Start()
 	{
@@ -15,7 +16,9 @@ public class AudioSetting : MonoBehaviour
 	void Update()
     {
 		Audiosource.volume = musicVolume;
-    }
+		PlayerSound.instance.source.volume = sfxVolume;
+
+	}
 	
 	public void updateVolume(float volume)
     {
@@ -23,4 +26,8 @@ public class AudioSetting : MonoBehaviour
 
     } 
 
+	public void updateSFX(float volume)
+    {
+		sfxVolume = volume;
+    }
 }
