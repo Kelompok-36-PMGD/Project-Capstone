@@ -78,7 +78,7 @@ public class Shop : MonoBehaviour
         descriptionText.text = shopList[1].description;
         selectedSkill = shopList[1].skill;
 
-        if (skills.Contains(selectedSkill))
+        if (skills[1].attackType == selectedSkill.attackType || skills.Contains(selectedSkill))
         {
             unlockButton.GetComponent<Button>().interactable = false;
             bought = true;
@@ -107,7 +107,7 @@ public class Shop : MonoBehaviour
         currentPrice = shopList[2].price;
         descriptionText.text = shopList[2].description;
         selectedSkill = shopList[2].skill;
-        if (skills.Contains(selectedSkill))
+        if (skills[2].attackType == selectedSkill.attackType || skills.Contains(selectedSkill))
         {
             unlockButton.GetComponent<Button>().interactable = false;
             bought = true;

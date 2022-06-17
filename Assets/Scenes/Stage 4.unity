@@ -60385,7 +60385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651919527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 489.10056, y: 2.72318, z: -14.516836}
+  m_LocalPosition: {x: 486.4339, y: 2.7231803, z: -14.516836}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 846933477}
@@ -61761,7 +61761,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinScriptable: {fileID: 11400000, guid: ba5aecbfb0c1aca41810039a9a274410, type: 2}
-  skillList: []
+  skillList:
+  - attackType: 1
+    manaCost: 15
+    damage: 15
+  - attackType: 2
+    manaCost: 25
+    damage: 25
+  - attackType: 0
+    manaCost: 0
+    damage: 0
   lifeScriptable: {fileID: 11400000, guid: b9a27bfe17f4936459db8361273dc37b, type: 2}
   manaScriptable: {fileID: 11400000, guid: 982f1b12c1f2ca04d9fbd8ab1e04c712, type: 2}
   inventoryItems: []
@@ -68385,7 +68394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846933476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.0005493, y: 3.27682, z: 0}
+  m_LocalPosition: {x: -4.333893, y: 3.2768197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1430508624}

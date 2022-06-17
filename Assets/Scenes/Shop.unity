@@ -2250,7 +2250,7 @@ MonoBehaviour:
       damage: 25
   - skillImage: {fileID: -8674368771038775917, guid: 06845e8f14c76b544aae1cf3a169799b, type: 3}
     skillName: Amukan Maung Bodas
-    price: 450
+    price: 300
     description: Launches Bodas's real head and deal powerful damage on impact
     skill:
       attackType: 3
