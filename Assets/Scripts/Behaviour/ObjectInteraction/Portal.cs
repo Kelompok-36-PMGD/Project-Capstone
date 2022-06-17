@@ -11,7 +11,10 @@ public class Portal : MonoBehaviour
     public int totalEnemies;
     public int defeatedEnemies;
 
+    public TextMesh alert;
+
     bool isOpened = false;
+    bool alertFading = false;
 
     private void Awake()
     {
@@ -26,6 +29,7 @@ public class Portal : MonoBehaviour
     private void Update()
     {
         anim.SetBool("status", isOpened);
+        if (alert.color.a != 0 && alertFading) alert.color = new Color(alert.color.r, alert.color.g, alert.color.b, Mathf.Lerp(alert.color.a, 0, 1f * Time.deltaTime));
     }
 
     public void MinionDefeated()
@@ -58,5 +62,19 @@ public class Portal : MonoBehaviour
                 GameManager.instance.NextLevel();
             }
         }
+        else
+        {
+            CancelInvoke("DelayAlertFade");
+            Invoke("DelayAlertFade", 3f);
+            alertFading = false;
+            alert.text = "Remaining enemies : " + (totalEnemies-defeatedEnemies).ToString();
+            alert.color = new Color(alert.color.r, alert.color.g, alert.color.b, 1);
+            alert.gameObject.SetActive(true);
+        }
+    }
+
+    void DelayAlertFade()
+    {
+        alertFading = true;
     }
 }

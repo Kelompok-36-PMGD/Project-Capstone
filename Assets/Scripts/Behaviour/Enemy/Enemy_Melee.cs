@@ -39,7 +39,7 @@ public class Enemy_Melee : MonoBehaviour
 
         if (CheckPlayer())
         {
-            if (cooldownTimer >= attackCooldown)
+            if (cooldownTimer >= attackCooldown && !charging)
             {
                 //attack
                 DamageTrigger();
@@ -90,6 +90,7 @@ public class Enemy_Melee : MonoBehaviour
 
     void DamagePlayer()
     {
+        Debug.Log("atttack");
         anim.SetTrigger("attack");
         //If the player still inside the enemy attack range, damage them
         if (CheckPlayer()) {

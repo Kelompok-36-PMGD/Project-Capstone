@@ -108,7 +108,7 @@ public class InventorySystem : MonoBehaviour
     {
         if (items[id].GetComponent<Item>().type== Item.ItemType.Consumables)
         {
-            //if (items[id].GetComponent<Item>().itemName == "Potion") PlayerSound.instance.DrinkSound();
+            if (items[id].GetComponent<Item>().itemName == "Potion") PlayerSound.instance.DrinkSound();
             Debug.Log($"CONSUMED {items[id].name}");
             //Invoke the cunsume custome event
             items[id].GetComponent<Item>().consumeEvent.Invoke();
@@ -148,8 +148,8 @@ public class InventorySystem : MonoBehaviour
         int loop = items.Count;
         for (int i = 0; i < loop; i++)
         {
-            Destroy(items[i], 0.1f);
-            items.RemoveAt(i);
+            Destroy(items[0], 0.1f);
+            items.RemoveAt(0);
         }
         Update_UI();
     }

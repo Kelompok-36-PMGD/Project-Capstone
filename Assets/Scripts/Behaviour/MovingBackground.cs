@@ -20,7 +20,6 @@ public class MovingBackground : MonoBehaviour
         direction = new Vector3(1, 0, 0);
         first = length[0];
         second = length[1];
-        Debug.Log(length[0]);
         background[0] = Instantiate(prefabs[0], new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity, transform).transform;
         background[1] = Instantiate(prefabs[1], new Vector3(transform.position.x - length[0], transform.position.y, transform.position.z), Quaternion.identity, transform).transform;
     }

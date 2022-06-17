@@ -7,6 +7,7 @@ public class MainMenuSceneLoader : MonoBehaviour
 {
     void OnEnable()
     {
+        Destroy(GameManager.instance.gameObject);
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 }

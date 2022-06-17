@@ -39,6 +39,7 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Time.timeScale = 1;
         PlayerSound.instance.ClickButtonSound();
         GameManager.instance.LoadDataFromGameManager();
         InventorySystem.instance.ClearAllInventory();
@@ -47,7 +48,9 @@ public class UIManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        Time.timeScale = 1;
+        Destroy(GameManager.instance.gameObject);
         PlayerSound.instance.ClickButtonSound();
-        SceneManager.LoadScene("Main", LoadSceneMode.Single);
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 }

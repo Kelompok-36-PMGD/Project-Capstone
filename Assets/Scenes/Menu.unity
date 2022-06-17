@@ -1185,19 +1185,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1477515071}
-        m_TargetAssemblyTypeName: PlayerSound, Assembly-CSharp
-        m_MethodName: updateVolume
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &333610987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,7 +3497,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ff556c47c084261429094f3bdbce7547, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.249
+  m_Volume: 1
   m_Pitch: -0.76
   Loop: 1
   Mute: 0
@@ -4036,7 +4024,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 97a52ed9c9afaca409ee496a4ecb1a46, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4141,7 +4129,7 @@ MonoBehaviour:
   skill1: {fileID: 8300000, guid: 870c8c240b7409d4da0a3803b23b9b5e, type: 3}
   skill2: {fileID: 8300000, guid: 49790704f5768ab4fb0cc44dad576953, type: 3}
   skill3: {fileID: 8300000, guid: a24313637422dd34b8415a5ed724c341, type: 3}
-  drinkPotion: {fileID: 0}
+  drinkPotion: {fileID: 8300000, guid: b3ca2f427e1695241acded0bd5fc22fb, type: 3}
   getKey: {fileID: 8300000, guid: d2c2f677a678f2249a08c0e6567ba75b, type: 3}
   deathSound: {fileID: 8300000, guid: 88e6f371dc4be424ba9b2c8a5b7f348e, type: 3}
   enemyHit: {fileID: 0}
@@ -5326,7 +5314,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.04
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}

@@ -76,10 +76,10 @@ public class PlayerSound : MonoBehaviour
         source.PlayOneShot(skill3);
     }
 
-    /*public void DrinkSound()
+    public void DrinkSound()
     {
         source.PlayOneShot(drinkPotion);
-    }*/
+    }
 
     public void PickKeySound()
     {

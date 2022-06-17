@@ -364,7 +364,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   speed: 4
-  moveDelay: 2
+  moveDelay: 6
   alwaysWalkAnim: 0
   direction: -1
   checkingTurnAround: 1
